@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link href="assets/css/bootstrap.css" rel="stylesheet">
+   <link href="assets/css/all.css" rel="stylesheet">
+   <link href="assets/css/styles.css" rel="stylesheet">
+   <title>Processadores</title>
+</head>
+
+<body>
+
+   <!-- Aqui entra o conteúdo dessa página. -->
+
+   <!--Navbar-->
+   <nav class="navbar navbar-light barra navbar-expand-md fixed-top">
+      <div class="container-fluid">
+         <a class="navbar-brand" href="index.html"><img class="logo d-inline-block align-top"
+               src="assets/images/Zamp Store - Logo (amarelo).png" width="90" height="90">
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+            aria-expanded="false" aria-label="Botão de navegação">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="menu">
+            <div class="navbar-nav mr-auto">
+               <!--<div class="dropdown">
+                  <a class="nav-link nav-item op dropdown-toggle text-center" data-toggle="dropdown"
+                     style="color: black;" href="#"><img src="assets/images/cpu-svgrepo-com.svg" width="30" height="30">
+                     Processadores</a>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#">Soquete AM4</a>
+                     <a class="dropdown-item" href="#">Soquete LGA 1151</a>
+                     <a class="dropdown-item" href="#">Soquete LGA 1200</a>
+                     <a class="dropdown-item" href="#">Soquete AM3+</a>
+                  </div>
+               </div>-->
+               <a class="nav-link nav-item op text-center" style="color: black;" href="cpus.html"><img
+                     src="assets/images/cpu-svgrepo-com.svg" width="30" height="30">
+                  Processadores</a>
+               <a class="nav-link nav-item op text-center" style="color: black;" href="mobo.html"><img
+                     src="assets/images/motherboard-svgrepo-com.svg" width="30" height="30"> Placa mãe</a>
+               <a class="nav-link nav-item op text-center" style="color: black;" href="gpus.html"><img
+                     src="assets/images/placa-de-video.svg" width="30" height="30"> Placa de vídeo</a>
+               <a class="nav-link nav-item op text-center" style="color: black;" href="#psu"><img
+                     src="assets/images/energy-svgrepo-com.svg" width="30" height="30"> Fonte de alimentação</a>
+               <a class="nav-link nav-item op text-center" style="color: black;" href="#case"><img
+                     src="assets/images/pc-svgrepo-com.svg" width="30" height="30"> Gabinete</a>
+               <a class="nav-link nav-item op text-center" style="color: black;" href="#ram"><i
+                     class="fas fa-memory"></i> Memória RAM</a>
+               <a class="nav-link nav-item op text-center" style="color: black;" onclick="mostrar('hdd')" href="#hdd"><i
+                     class="far fa-hdd"></i> Disco rígido</a>
+               <a class="nav-link nav-item op text-center" style="color: black;" href="#pcs"><img
+                     src="assets/images/computer-svgrepo-com.svg" width="30" height="30"> Computadores</a>
+            </div>
+            <div class="navbar-nav ml-auto" style="padding: 40px;">
+               <a class="nav-link nav-item text-center" style="color: black;" href="#carrinho"><img
+                     src="assets/images/shopping-cart-svgrepo-com.svg" width="30" height="30"> Carrinho de compras</a>
+               <a class="nav-link nav-item text-center" style="color: black;" href="#monte"><img
+                     src="assets/images/wrench-tool-fix-repair-svgrepo-com.svg" width="30" height="30"> Monte o seu
+                  PC</a>
+               <a class="nav-link nav-item text-center" style="color: black;" href="#login"><i
+                     class="fas fa-sign-in-alt"></i> Entrar</a>
+            </div>
+         </div>
+      </div>
+   </nav>
+
+   <div class="container" style="padding-top: 150px; padding-left: 100px;">
+      <div class="row" style="padding: 20px;">
+         <div class=" col-sm" style="padding: 20px;">
+            <div class="card" style="width: 18rem;">
+               <img class="w-50 h-50" src="assets/images/i5 9400f.jpg" alt="Processador Intel Core i5 9400F">
+               <div class="card-body">
+                  <h5 class="card-title">Processador Intel Core i5 9400F</h5>
+                  <p class="card-text">R$ 950,00</p>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary center" data-toggle="modal" data-target="#i5-9400f">
+                     Detalhes
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="i5-9400f" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                     <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                           <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLongTitle">Intel Core i5 9400F</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                              </button>
+                           </div>
+                           <div class="modal-body">
+                              Características:<br>
+                              - Marca: Intel<br>
+                              - Modelo: BX80684I59400F<br>
+
+                              Especificações:<br>
+                              - Segmento Vertical: Desktop<br>
+                              - Litografia: 14 nm<br>
+                              - Soquetes suportados: FCLGA1151<br>
+                              - Configuração Máxima da CPU: 1<br>
+                              - Solução térmica: PCG 2015C (65W)<br>
+                              - TJUNCTION: 100ºC<br>
+                              <br>
+                              Performance:<br>
+                              - Núcleos: 6x<br>
+                              - Threads: 6x<br>
+                              - Frequência básica: 2,90 GHz<br>
+                              - Freqüência máxima: 4,10 GHz<br>
+                              - SmartCache de 9 MB<br>
+                              - Velocidade do Bus: 8 GT / s DMI3<br>
+                              - TDP: 65 W<br>
+                              <br>
+                              Memória:<br>
+                              - Tamanho Máximo da Memória: 64GB (depende do tipo de memória)<br>
+                              - Tipos de memória: DDR4-2666<br>
+                              - Número Máximo de Canais de Memória: 2<br>
+                              - Largura de banda máxima da memória: 41,6 GB / s<br>
+                              <br>
+                              Opções de Expansão:<br>
+                              - Escalabilidade: Apenas 1S<br>
+                              - Revisão PCI Express: 3.0<br>
+                              - Configurações PCI Express: Até 1x16, 2x8, 1x8 + 2x4<br>
+                              - Número Máximo de Pistas PCI Express: 16<br>
+                              <br>
+                              Tecnologias Avançadas:<br>
+                              - Memória Intel Optane Suportada<br>
+                              - Tecnologia Intel Turbo Boost 2.0<br>
+                              - Tecnologia de virtualização Intel (VT-x)<br>
+                              - Tecnologia de virtualização Intel para E / S direcionada (VT-d)<br>
+                              - Intel VT-x com tabelas de páginas estendidas (EPT)<br>
+                              - Intel 64<br>
+                              - Conjunto de instruções: 64 bits<br>
+                              - Extensões de conjunto de instruções: Intel SSE4.1, Intel SSE4.2, Intel AVX2<br>
+                              - Estados ociosos<br>
+                              - Tecnologia Enhanced Intel SpeedStep<br>
+                              - Tecnologias de monitoramento térmico<br>
+                              - Tecnologia de proteção de identidade Intel<br>
+                              <br>
+                              Segurança e Confiabilidade:<br>
+                              - Novas instruções do Intel AES<br>
+                              - Chave Segura<br>
+                              - Extensões de guarda de software Intel (Intel SGX) com o Intel ME<br>
+                              - Extensões de proteção de memória Intel (Intel MPX)<br>
+                              - Protetor do Intel OS<br>
+                              - Execute Desativar Bit<br>
+                              - Protetor de inicialização Intel<br>
+                              <br>
+                              Conteúdo da Embalagem:<br>
+                              - Processador Intel<br>
+                              - Cooler<br>
+                              <br>
+                              Observação:<br>
+                              * Os processadores da INTEL da linha "F" não possuem vídeo integrado, tornando-se então
+                              obrigatório o uso de uma placa de vídeo no slot PCI-E, uma vez que as saídas de vídeo
+                              onboard da placa-mãe não irão funcionar.
+                           </div>
+                           <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                              <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover"
+                                 data-placement="top" data-content="Item Adicionado ao carrinho!">
+                                 Adicionar ao carrinho
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-sm" style="padding: 20px;">
+            <div class="card" style="width: 18rem;">
+               <img class="w-50 h-50" src="assets/images/i5 9600k.jpg" alt="Processador Intel Core i5 9600k">
+               <div class="card-body">
+                  <h5 class="card-title">Processador Intel Core i5 9600K</h5>
+                  <p class="card-text">R$ 1200,00</p>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary center" data-toggle="modal" data-target="#i5-9600k">
+                     Detalhes
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="i5-9600k" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                     <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                           <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                              </button>
+                           </div>
+                           <div class="modal-body center text-body">
+                              Características:<br>
+                              - Marca: Intel<br>
+                              - Modelo: BX80684I59600K<br>
+                              <br>
+                              <br>
+                              Especificações:<br>
+                              - 9ª geração de processadores Intel Core i5<br>
+                              - Número do processador: i5-9600K<br>
+                              - Litografia: 14 nm<br>
+                              <br>
+                              <br>
+                              <br>
+                              Atuação:<br>
+                              <br>
+                              - Núcleos:6<br>
+                              <br>
+                              - Threads: 6<br>
+                              <br>
+                              - Frequência base do processador: 3,70 GHz<br>
+                              <br>
+                              - Frequência máxima do turbo compressor:4.60 gigahertz<br>
+                              <br>
+                              - Cache: 9 MB SmartCache<br>
+                              <br>
+                              - Velocidade do barramento: 8 GT / s DMI3<br>
+                              <br>
+                              - TDP: 95 W<br>
+                              <br>
+                              <br>
+                              <br>
+                              Memória:<br>
+                              <br>
+                              - Tamanho Máximo da Memória (depende do tipo de memória): 64 GB<br>
+                              <br>
+                              - Tipos de memória: DDR4-2666<br>
+                              <br>
+                              - Número Máximo de Canais de Memória: 2<br>
+                              <br>
+                              - Largura de banda máxima da memória: 41,6 GB / s<br>
+                              <br>
+                              <br>
+                              <br>
+                              Gráficos de processador:<br>
+                              <br>
+                              - Gráficos de processador: Gráficos Intel® UHD 630<br>
+                              <br>
+                              - Frequência básica de gráficos: 350 MHz<br>
+                              <br>
+                              - Frequência dinâmica máxima de gráficos de 1,15 GHz<br>
+                              <br>
+                              - Vídeo Graphics Max Memory: 64 GB<br>
+                              <br>
+                              - Suporte 4K: 60Hz<br>
+                              <br>
+                              - Resolução Máxima (HDMI 1.4): 4096x2304 @ 24Hz<br>
+                              <br>
+                              - Resolução Máxima (DP):4096x2304 @ 60Hz<br>
+                              <br>
+                              - Resolução Máxima (eDP - Painel Plano Integrado): 4096x2304 @ 60Hz<br>
+                              <br>
+                              - Suporte DirectX *: 12<br>
+                              <br>
+                              - Suporte OpenGL *: 4.5<br>
+                              <br>
+                              - Vídeo Intel Quick Sync<br>
+                              <br>
+                              - Tecnologia Intel InTru 3D<br>
+                              <br>
+                              - Tecnologia Intel Clear Video HD<br>
+                              <br>
+                              - Tecnologia Intel Clear Video<br>
+                              <br>
+                              - Número de monitores suportados: 3<br>
+                              <br>
+                              - ID do dispositivo: 0x3E98<br>
+                              <br>
+                              <br>
+                              <br>
+                              Opções de Expansão:<br>
+                              <br>
+                              - Escalabilidade: 1S Apenas<br>
+                              <br>
+                              - Revisão PCI Express: 3.0<br>
+                              <br>
+                              - Configurações PCI Express: Até 1x16, 2x8, 1x8 + 2x4<br>
+                              <br>
+                              - Nº Máximo de Pistas PCI Express: 16<br>
+                              <br>
+                              <br>
+                              <br>
+                              Tecnologias avançadas:<br>
+                              <br>
+                              - Memória Intel Optane Suportada<br>
+                              <br>
+                              - Tecnologia Intel Turbo Boost: 2.0<br>
+                              <br>
+                              - Elegibilidade da Plataforma Intel vPro<br>
+                              <br>
+                              - Tecnologia de virtualização Intel (VT-x)<br>
+                              <br>
+                              - Tecnologia de virtualização Intel® para E / S direcionada (VT-d)<br>
+                              <br>
+                              - Intel TSX-NI<br>
+                              <br>
+                              - Intel 64<br>
+                              <br>
+                              - Conjunto de instruções de 64 bits<br>
+                              <br>
+                              - Extensões do conjunto de instruções: Intel SSE4.1, Intel SSE4.2, Intel AVX2<br>
+                              <br>
+                              - Tecnologia Enhanced Intel SpeedStep<br>
+                              <br>
+                              - Tecnologias de Monitoramento Térmico<br>
+                              <br>
+                              - Tecnologia Intel Identity Protection<br>
+                              <br>
+                              - Programa de Plataforma de Imagem Estável Intel (SIPP): Segurança e Confiabilidade<br>
+                              <br>
+                              - Novas instruções do Intel AES<br>
+                              <br>
+                              - Extensões de guarda de software Intel (Intel SGX)<br>
+                              <br>
+                              - Extensões de proteção de memória Intel (Intel MPX)<br>
+                              <br>
+                              - Protetor do Intel<br>
+                              <br>
+                              - Tecnologia Intel Trusted Execution<br>
+                              <br>
+                              - Execute Desativar Bit<br>
+                              <br>
+                              - Protetor de inicialização Intel<br>
+                              <br>
+                              <br>
+                              Conteúdo da embalagem:<br>
+                              - Processador Intel Core i5-9600k Coffee Lake Refresh 9a Geração
+                           </div>
+                           <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                              <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover"
+                              data-placement="top" data-content="Item Adicionado ao carrinho!">
+                              Adicionar ao carrinho
+                           </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-sm" style="padding: 20px;">
+            <div class="card" style="width: 18rem;">
+               <img class="w-50 h-50" src="assets/images/ryzen 7 3700x.jpg" alt="Processador AMD Ryzen 7 3700X">
+               <div class="card-body">
+                  <h5 class="card-title">Processador AMD Ryzen 7 3700X</h5>
+                  <p class="card-text">R$ 1900,00</p>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary center" data-toggle="modal" data-target="#ryzen-7-3700x">
+                     Detalhes
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="ryzen-7-3700x" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                     <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                           <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLongTitle">Ryzen 7 3700X</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                              </button>
+                           </div>
+                           <div class="modal-body">
+                              Características:<br>
+                              <br>
+                              - Marca: AMD<br>
+                              <br>
+                              - Modelo: 100-100000071BOX<br>
+                              <br>
+                              <br>
+                              <br>
+                              Especificações:<br>
+                              <br>
+                              - Nº de núcleos de CPU: 8<br>
+                              <br>
+                              - Nº de threads: 16<br>
+                              <br>
+                              - Clock básico: 3.6GHz<br>
+                              <br>
+                              - Clock de Max Boost: 4.4GHz<br>
+                              <br>
+                              - Cachê L2 total: 4MB<br>
+                              <br>
+                              - Cachê L3 total: 32MB<br>
+                              <br>
+                              - Desbloqueado: Sim<br>
+                              <br>
+                              - CMOS: TSMC 7nm FinFET<br>
+                              <br>
+                              - Socket: AM4<br>
+                              <br>
+                              - Versão do PCI Express: PCIe 4.0 x16<br>
+                              <br>
+                              - Solução térmica: Wraith Prism with RGB LED<br>
+                              <br>
+                              - TDP / TDP Padrão: 65W<br>
+                              <br>
+                              <br>
+                              <br>
+                              Memória:<br>
+                              <br>
+                              - Velocidade máxima da memória: 3200MHz<br>
+                              <br>
+                              - Tipo de memória: DDR4<br>
+                              <br>
+                              - Canais de memória: 2<br>
+                              <br>
+                              <br>
+                              <br>
+                              Conteúdo da embalagem:<br>
+                              <br>
+                              - 01 Processador AMD Ryzen 7 3700X<br>
+                              <br>
+                              - 01 Cooler<br>
+                              <br>
+                              <br>
+                              <br>
+                              ESTE PROCESSADOR NÃO POSSUI VÍDEO INTEGRADO!<br>
+                              <br>
+                              <br>
+                              <br>
+                              * Fiquei Ligado: Para montar um setup com esse modelo de processador, é necessário a
+                              instalação de uma placa de vídeo, pois o mesmo não possui vídeo integrado.<br>
+                              <br>
+                              <br>
+                              Garantia<br>
+                              1 ano de garantia<br>
+                              (9 meses de garantia contratual junto ao fabricante + 3 meses referentes à garantia legal,
+                              nos termos do artigo 26, II, do Código de Defesa do Consumidor)<br>
+                              <br>
+                              <br>
+                              Peso<br>
+                              800 gramas (bruto com embalagem)
+                           </div>
+                           <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                              <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover"
+                              data-placement="top" data-content="Item Adicionado ao carrinho!">
+                              Adicionar ao carrinho
+                           </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-sm" style="padding: 20px;">
+            <div class="card" style="width: 18rem;">
+               <img class="w-50 h-50" src="assets/images/ryzen 3 3200g.png" alt="Processador AMD Ryzen 3 3200G">
+               <div class="card-body">
+                  <h5 class="card-title">Processador AMD Ryzen 3 3200G</h5>
+                  <p class="card-text">R$ 500,00</p>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary center" data-toggle="modal" data-target="#ryzen-3-3200g">
+                     Detalhes
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="ryzen-3-3200g" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                     <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                           <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLongTitle">Ryzen 3 3200G</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                              </button>
+                           </div>
+                           <div class="modal-body">
+                              Características:<br>
+                              <br>
+                              - Marca: AMD<br>
+                              <br>
+                              - Modelo: YD3200C5FHBOX<br>
+                              <br>
+                              <br>
+                              <br>
+                              Especificações:<br>
+                              <br>
+                              - Nº de núcleos de CPU: 4<br>
+                              <br>
+                              - Threads: 4<br>
+                              <br>
+                              - Nº de núcleos de GPU: 8<br>
+                              <br>
+                              - Clock básico: 3,6 GHz<br>
+                              <br>
+                              - Clock de Max Boost: 4 GHz<br>
+                              <br>
+                              - Total de Cache L1: 384KB<br>
+                              <br>
+                              - Cache Total L2: 2MB<br>
+                              <br>
+                              - Cachê L3 total: 4MB<br>
+                              <br>
+                              - Desbloqueado<br>
+                              <br>
+                              - CMOS: FinFET de 12nm<br>
+                              <br>
+                              - Socket: AM4<br>
+                              <br>
+                              - Versão PCI Express: PCIe 3.0 x8<br>
+                              <br>
+                              - Solução térmica: Wraith Stealth<br>
+                              <br>
+                              - TDP / TDP Padrão: 65W<br>
+                              <br>
+                              - cTDP: 45-65W<br>
+                              <br>
+                              - Tempo máximo: 95 ºC<br>
+                              <br>
+                              <br>
+                              <br>
+                              Memória:<br>
+                              <br>
+                              - Velocidade máxima da memória: 2933 MHz<br>
+                              <br>
+                              - Tipo de memória: DDR4<br>
+                              <br>
+                              - Canais de memória: 2<br>
+                              <br>
+                              <br>
+                              <br>
+                              Placa de vídeo:<br>
+                              <br>
+                              - Frequência gráfica: 1250 MHz<br>
+                              <br>
+                              - Modelo gráfico: Gráficos Radeon Vega 8<br>
+                              <br>
+                              - Contagem de núcleos gráficos: 8<br>
+                              <br>
+                              <br>
+                              <br>
+                              Recursos:<br>
+                              <br>
+                              - HDMI<br>
+                              <br>
+                              - DisplayPort<br>
+                              <br>
+                              <br>
+                              <br>
+                              Conteúdo da Embalagem:<br>
+                              <br>
+                              - Processador AMD Ryzen 3 3200G<br>
+                              <br>
+                              - Cooler<br>
+                              <br>
+                              <br>
+                              Garantia<br>
+                              1 ano de garantia<br>
+                              (9 meses de garantia contratual junto ao fabricante + 3 meses referentes à garantia legal,
+                              nos termos do artigo 26, II, do Código de Defesa do Consumidor)<br>
+                              <br>
+                              <br>
+                              Peso<br>
+                              660 gramas (bruto com embalagem)
+                           </div>
+                           <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover"
+                              data-placement="top" data-content="Item Adicionado ao carrinho!">
+                              Adicionar ao carrinho
+                           </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="sidenav" style="padding-top: 190px;">
+      <p>Filtros de busca</p>
+      <a href="#">Marca:</a>
+      <a href="#">Ordenar por:</a>
+      <a href="#">Soquete:</a>
+      <a href="#">Série:</a>
+   </div>
+   <div style="bottom: 0px; padding-left: 50%;">
+      <ul class="pagination justify-content-center" style="bottom: 0px; width: 100px; height: 40px;">
+         <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+         </li>
+         <li class="page-item"><a class="page-link" href="#">1</a></li>
+         <li class="page-item"><a class="page-link" href="#">2</a></li>
+         <li class="page-item"><a class="page-link" href="#">3</a></li>
+         <li class="page-item">
+            <a class="page-link" href="#">Próximo</a>
+         </li>
+      </ul>
+   </div>
+   <!--rodapé-->
+   <div class="footer">
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-4 col-lg-3 col-sm-7" style="text-align: center;">
+               <h5>FAQ</h5>
+               <ul class="list-unstyled">
+                  <li><a href='#'>FAQ - Orientações</a></li>
+               </ul>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-sm-5" style="text-align: center;">
+               <h5>Minha conta</h5>
+               <ul class="list-unstyled">
+                  <li><a href='#'>Login</a></li>
+                  <li><a href='#'>Pedidos</a></li>
+                  <li><a href='#'>Dados</a></li>
+               </ul>
+            </div>
+
+            <div class="col-xl-3 col-lg-3 col-sm-7" style="text-align: center;">
+               <h5>Sobre a empresa</h5>
+               <ul class="list-unstyled">
+                  <li><a href='#'>História</a></li>
+                  <li><a href='#'>Política do Site</a></li>
+                  <li><a href='#'>Parceiros</a></li>
+               </ul>
+            </div>
+
+            <div class="col-xl-2 col-lg-3 col-sm-5" style="text-align: center;">
+               <h5>Contato</h5>
+               <ul class="list-unstyled">
+                  <li><i class="fas fa-user" style="color: white;"></i> Arthur</li>
+                  <li><i class="fas fa-phone" style="color: white;"></i> (99)96666-6666</li>
+                  <li><i class="fas fa-envelope-square"></i> <a
+                        href='mailto:arthurpimentelzampirolli@gmail.com'>arthurpimentelzampirolli@gmail.com</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="assets/js/jquery-3.3.1.js"></script>
+   <script src="assets/js/popper.js"></script>
+   <script src="assets/js/bootstrap.js"></script>
+   <script src="assets/js/script.js"></script>
+</body>
+
+</html>
