@@ -260,4 +260,8 @@ button {
 }
 .footer i, h5, li, fa-user {
     color: white;
+}*/
+.modal-body {
+    max-height: calc(115vh - 210px);
+    overflow-y: auto;
 }

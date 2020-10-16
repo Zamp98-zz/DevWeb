@@ -61,8 +61,8 @@
                      src="assets/images/pc-svgrepo-com.svg" width="30" height="30"> Gabinete</a>
                <a class="nav-link nav-item op text-center" style="color: black;" href="#ram"><i
                      class="fas fa-memory"></i> Memória RAM</a>
-               <a class="nav-link nav-item op text-center" style="color: black;" onclick="mostrar('hdd')" href="#hdd"><i
-                     class="far fa-hdd"></i> Disco rígido</a>
+               <a class="nav-link nav-item op text-center" style="color: black;" href="#hdd"><i class="far fa-hdd"></i>
+                  Disco rígido</a>
                <a class="nav-link nav-item op text-center" style="color: black;" href="#pcs"><img
                      src="assets/images/computer-svgrepo-com.svg" width="30" height="30"> Computadores</a>
 
@@ -73,7 +73,7 @@
                <a class="nav-link nav-item text-center" style="color: black;" href="#monte"><img
                      src="assets/images/wrench-tool-fix-repair-svgrepo-com.svg" width="30" height="30"> Monte o seu
                   PC</a>
-               <a class="nav-link nav-item text-center" style="color: black;" href="#login"><i
+               <a class="nav-link nav-item text-center" style="color: black;" href="#loginModal" data-toggle="modal"><i
                      class="fas fa-sign-in-alt"></i> Entrar</a>
             </div>
          </div>
@@ -83,39 +83,219 @@
       <h3 class="margin-auto p-lg-5">Itens mais vendidos</h3>
    </div>
    <!-- Button to open the modal login form -->
-   <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+   <!-- Modal -->
+   <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body">
+               <form action="">
+                  <div class="form-group row">
+                     <label for="nome" class="col-form-label col-lg-2">Usuário</label>
+                     <div class="col-lg-10">
+                        <input type="text" name="nome" class="form-control is-valid" placeholder="Usuário" id="nome">
+                     </div>
+                  </div>
+                  <div class="form-group row">
+                     <label for="senha" class="col-form-label col-lg-2">Senha</label>
+                     <div class="col-lg-10 center">
+                        <input type="password" placeholder="Senha" name="psw" id="senha">
+                     </div>
+                  </div>
+                  <div class="form-group row center">
+                     <h5 style="text-align: center;">Não possui conta?</h5>
+                     <div class="container-fluid center" style="padding-top: 10px;">
+                        <button class="btn btn-primary center" style="width: 50%;" data-toggle="modal"
+                           data-dismiss="modal" data-target="#registroModal">Registrar-se</button>
+                     </div>
 
-   <!-- The Modal -->
-   <div id="id01" class="modal">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close"
-         title="Close Modal">&times;</span>
-
-      <!-- Modal Content -->
-      <form class="modal-content animate" action="/action_page.php">
-         <div class="imgcontainer">
-            <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                  </div>
+               </form>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+               <button type="button" class="btn btn-primary">Entrar</button>
+            </div>
          </div>
-
-         <div class="container">
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
-
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-
-            <button type="submit">Login</button>
-            <label>
-               <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-         </div>
-
-         <div class="container" style="background-color:#f1f1f1">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'"
-               class="cancelbtn">Cancel</button>
-            <span class="psw">Forgot <a href="#">password?</a></span>
-         </div>
-      </form>
+      </div>
    </div>
+
+   <!--Registro Modal-->
+   <div class="modal fade" id="registroModal" style="height: 100%">
+      <div class="modal-dialog modal-xl">
+         <div class="modal-content">
+            <div class="modal-header">
+               <span class="modal-title">Registrar novo usuário</span>
+               <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body">
+               <form action="">
+                  <fieldset class="form-group">
+                     <legend class="font-weight-bold">Informações Pessoais</legend>
+
+                     <div class="form-group row">
+                        <label for="nome" class="col-form-label col-lg-2">Nome</label>
+                        <div class="col-lg-10">
+                           <input type="text" name="nome" class="form-control is-valid" placeholder="Nome" id="nome">
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                        <label for="e-mail" class="col-form-label col-lg-2">E-mail</label>
+                        <div class="col-lg-10">
+                           <input type="email" name="e-mail" class="form-control is-valid"
+                              placeholder="Endereço de e-mail." id="nome">
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                        <label class="col-form-label col-lg-2">Sexo</label>
+                        <div class="col-lg-10" style="padding-top: 7px;">
+                           <div class="form-check form-check-inline">
+                              <input type="radio" id="sexo-masc" name="sexo" value="M" class="form-check-input">
+                              <label for="sexo-masc" class="form-check-label">
+                                 Masculino
+                              </label>
+                           </div>
+                           <div class="form-check form-check-inline">
+                              <input type="radio" id="sexo-fem" name="sexo" value="F" class="form-check-input">
+                              <label for="sexo-fem" class="form-check-label">
+                                 Feminino
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                        <label for="CPF" class="col-form-label col-lg-2">CPF</label>
+                        <div class="col-lg-10">
+                           <input type="text" id="CPF" name="cpf" class="form-control is-invalid"
+                              placeholder="Cadastro de pessoa física(Somente números)">
+                           <div class="invalid-feedback">
+                              Este campo deve ser informado.
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                        <label for="cep" class="col-form-label col-lg-2">CEP</label>
+                        <div class="col-lg-10">
+                           <input type="text" id="cep" name="cep" class="form-control is-invalid" placeholder="CEP">
+                           <div class="invalid-feedback">
+                              Este campo deve ser informado.
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                        <label for="telefone" class="col-form-label col-lg-2">Número de telefone</label>
+                        <div class="col-lg-10">
+                           <input type="text" id="telefone" name="endereco" class="form-control is-invalid"
+                              placeholder="Somente números(DDD e o número).">
+                           <div class="invalid-feedback">
+                              Este campo deve ser informado.
+                           </div>
+                        </div>
+                     </div>
+                  </fieldset>
+                  <fieldset class="form-group" style="margin-bottom: 0px;">
+                     <fieldset class="form-group" style="margin-bottom: 0px;">
+                        <div class="form-group row">
+                           <label for="passeio" class="col-form-label col-lg-2 text-left text-lg-right">Estou me
+                              inscrevendo no site com o objetivo de:</label>
+                           <div class="col-lg-10">
+                              <select class="form-control" id="passeio" multiple>
+                                 <option value="">-- Selecione uma opção --</option>
+                                 <option value="">Montar um computador</option>
+                                 <option value="">Comprar peças</option>
+                                 <option value="">Vender peças</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="form-group row">
+                           <label for="senha" class="col-form-label col-lg-2 text-left text-lg-right">Fiquei sabendo da
+                              loja por meio de:</label>
+                           <div class="col-lg-10">
+                              <div class="form-check">
+                                 <input type="checkbox" class="form-check-input" name="facebook" id="facebook">
+                                 <label class="form-check-label" for="facebook">
+                                    Facebook
+                                 </label>
+                              </div>
+                              <div class="form-check">
+                                 <input type="checkbox" class="form-check-input" name="twitter" id="twitter">
+                                 <label class="form-check-label" for="twitter">
+                                    Twitter
+                                 </label>
+                              </div>
+                              <div class="form-check">
+                                 <input type="checkbox" class="form-check-input" name="youtube" id="youtube">
+                                 <label class="form-check-label" for="youtube">
+                                    Youtube
+                                 </label>
+                              </div>
+                              <div class="form-check">
+                                 <input type="checkbox" class="form-check-input" name="email" id="email">
+                                 <label class="form-check-label" for="email">
+                                    E-mail
+                                 </label>
+                              </div>
+                              <div class="form-check">
+                                 <input type="checkbox" class="form-check-input" name="recomendado" id="recomendado">
+                                 <label class="form-check-label" for="recomendado">
+                                    Recomendação de amigos
+                                 </label>
+                              </div>
+                              <div class="form-check">
+                                 <input type="checkbox" class="form-check-input" name="outros" id="outros">
+                                 <label class="form-check-label" for="outros">
+                                    Outros
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="form-group row">
+                           <label for="" class="col-form-label col-lg-2">Deseja receber mensagens com promoções e
+                              novidades?</label>
+                           <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="resposta" id="sim" value="s">
+                              <label class="form-check-label" for="exampleRadios1">
+                                 Sim
+                              </label>
+                           </div>
+                           <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="resposta" id="nao" value="n">
+                              <label class="form-check-label" for="exampleRadios1">
+                                 Não
+                              </label>
+                           </div>
+                        </div>
+
+                     </fieldset>
+                     <fieldset>
+                        <div class="form-check form-group row form-check-inline" style="padding-left: 50px;">
+                           <input class="form-check-input" type="checkbox" id="termosCheck">
+                           <label class="form-check-label" for="termosCheck">
+                              Eu li os <a href="#" style="color: cornflowerblue;">termos de serviço</a> do site e desejo
+                              continuar
+                           </label>
+                           <button type="button" class="btn btn-primary" data-dismiss="modal" style="padding-left: 10px; margin: 10px;">
+                              Enviar
+                           </button>
+                        </div>
+                     </fieldset>
+
+            </div>
+            </form>
+         </div>
+      </div>
+   </div>
+   </div>
+
    <!--carrossel-->
    <div id="carouselExampleIndicators" style="padding: 100px;" class="carousel slide center" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -317,7 +497,7 @@
    </div>
    <div class="footer">
       <div class="container">
-         <div class="row">
+         <div class="row" style="padding-top: 30px;">
             <div class="col-xl-4 col-lg-3 col-sm-7" style="text-align: center;">
                <h5>FAQ</h5>
                <ul class="list-unstyled">
