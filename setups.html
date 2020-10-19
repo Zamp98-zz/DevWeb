@@ -3,7 +3,7 @@
 
 <head>
    <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <link href="assets/css/bootstrap.css" rel="stylesheet">
    <link href="assets/css/all.css" rel="stylesheet">
    <link href="assets/css/styles.css" rel="stylesheet">
@@ -13,10 +13,303 @@
 <body>
 
    <!-- Aqui entra o conteúdo dessa página. -->
+   <nav class="navbar navbar-light barra navbar-expand-md fixed-top">
+      <div class="container-fluid">
+         <a class="navbar-brand" href="index.html"><img class="logo d-inline-block align-top"
+               src="assets/images/Zamp Store - Logo (amarelo).png" width="90" height="90">
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+            aria-expanded="false" aria-label="Botão de navegação">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="menu">
+            <div class="navbar-nav mr-auto">
+               <!--<div class="dropdown">
+                  <a class="nav-link nav-item op dropdown-toggle text-center" data-toggle="dropdown"
+                     style="color: black;" href="#"><img src="assets/images/cpu-svgrepo-com.svg" width="30" height="30">
+                     Processadores</a>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#">Soquete AM4</a>
+                     <a class="dropdown-item" href="#">Soquete LGA 1151</a>
+                     <a class="dropdown-item" href="#">Soquete LGA 1200</a>
+                     <a class="dropdown-item" href="#">Soquete AM3+</a>
+                  </div>
+               </div>-->
+               <!--Acrescente ao trabalho 01 um formulário de entrada de dados para 
+                  o cadastro de algo que seja exibido pelo seu site. Esse form de 
+                  entrada de dados deve conter pelo menos uma caixa de texto, um 
+                  grupo de botões de rádio, um combo box e um grupo de check boxes, 
+                  e deve efetuar validação para todos estes campos impedindo que o
+                  form possa ser submetido sem que um campo seja preenchido. 
+                  Essa validação deve ser realizada utilizando o jquery.-->
+               <a class="nav-link nav-item op text-center" style="color: black;" href="cpus.html"><img
+                     src="assets/images/cpu-svgrepo-com.svg" width="30" height="30">
+                  Processadores</a>
+               <a class="nav-link nav-item op text-center" style="color: black;" href="mobo.html"><img
+                     src="assets/images/motherboard-svgrepo-com.svg" width="30" height="30"> Placa mãe</a>
+               <a class="nav-link nav-item op text-center" style="color: black;" href="gpus.html"><img
+                     src="assets/images/placa-de-video.svg" width="30" height="30"> Placa de vídeo</a>
+               <a class="nav-link nav-item op text-center" style="color: black;" href="psu.html"><img
+                     src="assets/images/energy-svgrepo-com.svg" width="30" height="30"> Fonte de alimentação</a>
+               <a class="nav-link nav-item op text-center" style="color: black;" href="case.html"><img
+                     src="assets/images/pc-svgrepo-com.svg" width="30" height="30"> Gabinete</a>
+               <a class="nav-link nav-item op text-center" style="color: black;" href="ram.html"><i
+                     class="fas fa-memory"></i> Memória RAM</a>
+               <a class="nav-link nav-item op text-center" style="color: black;" href="hdd.html"><i
+                     class="far fa-hdd"></i>
+                  Disco rígido</a>
+               <a class="nav-link nav-item op text-center" style="color: black;" href="setups.html"><img
+                     src="assets/images/computer-svgrepo-com.svg" width="30" height="30"> Computadores</a>
+
+            </div>
+            <div class="navbar-nav ml-auto" style="padding: 40px;">
+               <a class="nav-link nav-item text-center" style="color: black;" href="#carrinho"><img
+                     src="assets/images/shopping-cart-svgrepo-com.svg" width="30" height="30"> Carrinho de compras</a>
+               <a class="nav-link nav-item text-center" style="color: black;" href="#monte"><img
+                     src="assets/images/wrench-tool-fix-repair-svgrepo-com.svg" width="30" height="30"> Monte o seu
+                  PC</a>
+               <a class="nav-link nav-item text-center" style="color: black;" href="#loginModal" data-toggle="modal"><i
+                     class="fas fa-sign-in-alt"></i> Entrar ou registrar-se</a>
+            </div>
+         </div>
+      </div>
+   </nav>
+   <!-- Button to open the modal login form -->
+   <!-- Modal -->
+   <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body">
+               <form action="">
+                  <div class="form-group row">
+                     <label for="nome" class="col-form-label col-lg-2">Usuário</label>
+                     <div class="col-lg-10">
+                        <input type="text" name="nome" class="form-control" placeholder="Usuário" id="userEmail">
+                     </div>
+                  </div>
+                  <div class="form-group row">
+                     <label for="senha" class="col-form-label col-lg-2">Senha</label>
+                     <div class="col-lg-10 center">
+                        <input type="password" placeholder="Senha" name="psw" id="senhaLogin">
+                     </div>
+                  </div>
+                  <div class="form-group row center">
+                     <h5 style="text-align: center;">Não possui conta?</h5>
+                     <div class="container-fluid center" style="padding-top: 10px;">
+                        <button class="btn btn-primary center" style="width: 50%;" data-toggle="modal"
+                           data-dismiss="modal" data-target="#registroModal">Registrar-se</button>
+                     </div>
+
+                  </div>
+               </form>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+               <button type="button" class="btn btn-primary" id="botaoLogin">Entrar</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!--Registro Modal-->
+   <div class="modal fade" id="registroModal" style="height: 100%">
+      <div class="modal-dialog modal-xl">
+         <div class="modal-content">
+            <div class="modal-header">
+               <span class="modal-title">Registrar novo usuário</span>
+               <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body">
+               <form action="">
+                  <fieldset class="form-group">
+                     <legend class="font-weight-bold">Informações Pessoais</legend>
+
+                     <div class="form-group row">
+                        <label for="nome" class="col-form-label col-lg-2">Nome</label>
+                        <div class="col-lg-10">
+                           <input type="text" name="nome" class="form-control" placeholder="Nome" id="nomeRegistro">
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                        <label for="e-mail" class="col-form-label col-lg-2">E-mail</label>
+                        <div class="col-lg-10">
+                           <input type="email" name="e-mail" class="form-control" placeholder="Endereço de e-mail."
+                              id="emailRegistro">
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                        <label class="col-form-label col-lg-2">Sexo</label>
+                        <div class="col-lg-10" style="padding-top: 7px;">
+                           <div class="form-check form-check-inline">
+                              <input type="radio" id="sexo-masc" name="sexo" value="M" class="form-check-input">
+                              <label for="sexo-masc" class="form-check-label">
+                                 Masculino
+                              </label>
+                           </div>
+                           <div class="form-check form-check-inline">
+                              <input type="radio" id="sexo-fem" name="sexo" value="F" class="form-check-input">
+                              <label for="sexo-fem" class="form-check-label">
+                                 Feminino
+                              </label>
+                           </div>
+                           <div id="sexo-feedback" class="invalid-feedback">
+                              Campo de preenchimento obrigatório.
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                        <label for="CPF" class="col-form-label col-lg-2">CPF</label>
+                        <div class="col-lg-10">
+                           <input type="text" id="cpf" name="cpf" class="form-control"
+                              placeholder="Cadastro de pessoa física(Somente números)">
+                           <div class="invalid-feedback">
+                              Este campo deve ser informado.
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                        <label for="cep" class="col-form-label col-lg-2">CEP</label>
+                        <div class="col-lg-10">
+                           <input type="text" id="cep" name="cep" class="form-control" placeholder="CEP">
+                           <div class="invalid-feedback">
+                              Este campo deve ser informado.
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                        <label for="telefone" class="col-form-label col-lg-2">Número de telefone</label>
+                        <div class="col-lg-10">
+                           <input type="text" id="telefone" name="endereco" class="form-control"
+                              placeholder="Somente números(DDD e o número).">
+                           <div class="invalid-feedback">
+                              Este campo deve ser informado.
+                           </div>
+                        </div>
+                     </div>
+                  </fieldset>
+                  <fieldset class="form-group" style="margin-bottom: 0px;">
+                     <fieldset class="form-group" style="margin-bottom: 0px;">
+                        <div class="form-group row">
+                           <label for="objetivo" class="col-form-label col-lg-2 text-left text-lg-right">Estou me
+                              inscrevendo no site com o objetivo de:</label>
+                           <div class="col-lg-10">
+                              <select class="form-control form-control-sm" id="objetivo">
+                                 <option value="">-- Selecione uma opção --</option>
+                                 <option value="1">Montar um computador</option>
+                                 <option value="2">Comprar peças</option>
+                                 <option value="3">Fornecer peças</option>
+                              </select>
+                           </div>
+                           <div class="invalid-feedback">
+                              Campo de preenchimento obrigatório.
+                           </div>
+                        </div>
+                        <div class="form-group row">
+                           <label for="soube" class="col-form-label col-lg-2 text-left text-lg-right">Fiquei sabendo da
+                              loja por meio de:</label>
+                           <div class="col-lg-10" id="soube">
+                              <div class="form-check">
+                                 <input type="checkbox" class="form-check-input soube" name="facebook" id="facebookCheck">
+                                 <label class="form-check-label soube" for="facebook">
+                                    Facebook
+                                 </label>
+                              </div>
+                              <div class="form-check">
+                                 <input type="checkbox" class="form-check-input soube" name="twitter" id="twitterCheck">
+                                 <label class="form-check-label" for="twitter">
+                                    Twitter
+                                 </label>
+                              </div>
+                              <div class="form-check">
+                                 <input type="checkbox" class="form-check-input soube" name="youtube" id="youtubeCheck">
+                                 <label class="form-check-label" for="youtube">
+                                    Youtube
+                                 </label>
+                              </div>
+                              <div class="form-check">
+                                 <input type="checkbox" class="form-check-input soube" name="email" id="emailCheck">
+                                 <label class="form-check-label" for="email">
+                                    E-mail
+                                 </label>
+                              </div>
+                              <div class="form-check">
+                                 <input type="checkbox" class="form-check-input soube" name="recomendado"
+                                    id="recomendadoCheck">
+                                 <label class="form-check-label" for="recomendado">
+                                    Recomendação de amigos ou parceiros
+                                 </label>
+                              </div>
+                              <div class="form-check">
+                                 <input type="checkbox" class="form-check-input soube" name="outros" id="outrosCheck">
+                                 <label class="form-check-label" for="outros">
+                                    Outros
+                                 </label>
+                              </div>
+                              <div id="soube-feedback" class="invalid-feedback">
+                                 Campo de preenchimento obrigatório.
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="form-group row" style="padding-left: 10px;">
+                           <label for="" class="col-form-label col-lg-2 text-left text-lg-right">Deseja receber
+                              mensagens com promoções e
+                              novidades?</label>
+                           <div class="form-check form-check-inline" style="padding-left: 10px;">
+                              <input class="form-check-input" type="radio" name="resposta" id="sim" value="s">
+                              <label class="form-check-label" for="sim">
+                                 Sim
+                              </label>
+                           </div>
+                           <div class="form-check form-check-inline" style="padding-left: 10px;">
+                              <input class="form-check-input" type="radio" name="resposta" id="nao" value="n">
+                              <label class="form-check-label" for="nao">
+                                 Não
+                              </label>
+                           </div>
+                           <div id="resposta-feedback" class="invalid-feedback" style="padding-left: 17%;">
+                              Campo de preenchimento obrigatório.
+                           </div>
+                        </div>
+
+                     </fieldset>
+                     <fieldset>
+                        <div class="form-check form-group row form-check-inline" style="padding-left: 17%;">
+                           <input class="form-check-input termos" type="checkbox" id="termosCheck">
+                           <label class="form-check-label" for="termosCheck">
+                              Eu li os <a href="#" style="color: cornflowerblue;">termos de serviço</a> do site e desejo
+                              continuar
+                           </label>
+                           <div id="termos-feedback" class="invalid-feedback">
+                              Campo de preenchimento obrigatório.
+                           </div>
+                           <button type="button" class="btn btn-primary" id="botaoEnviar"
+                              style="padding-left: 10px; margin: 10px;">
+                              Enviar
+                           </button>
+                        </div>
+                     </fieldset>
+
+            </div>
+            </form>
+         </div>
+      </div>
+   </div>
+   </div>
 
    <script src="assets/js/jquery-3.3.1.js"></script>
    <script src="assets/js/popper.js"></script>
    <script src="assets/js/bootstrap.js"></script>
    <script src="assets/js/script.js"></script>
 </body>
+
 </html>

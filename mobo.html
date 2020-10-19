@@ -14,7 +14,7 @@
 
    <!-- Aqui entra o conteúdo dessa página. -->
 
-   <!--Navbar-->
+   <!--Grupo da barra de navegação-->
    <nav class="navbar navbar-light barra navbar-expand-md fixed-top">
       <div class="container-fluid">
          <a class="navbar-brand" href="index.html"><img class="logo d-inline-block align-top"
@@ -37,6 +37,13 @@
                      <a class="dropdown-item" href="#">Soquete AM3+</a>
                   </div>
                </div>-->
+               <!--Acrescente ao trabalho 01 um formulário de entrada de dados para 
+                  o cadastro de algo que seja exibido pelo seu site. Esse form de 
+                  entrada de dados deve conter pelo menos uma caixa de texto, um 
+                  grupo de botões de rádio, um combo box e um grupo de check boxes, 
+                  e deve efetuar validação para todos estes campos impedindo que o
+                  form possa ser submetido sem que um campo seja preenchido. 
+                  Essa validação deve ser realizada utilizando o jquery.-->
                <a class="nav-link nav-item op text-center" style="color: black;" href="cpus.html"><img
                      src="assets/images/cpu-svgrepo-com.svg" width="30" height="30">
                   Processadores</a>
@@ -44,1154 +51,292 @@
                      src="assets/images/motherboard-svgrepo-com.svg" width="30" height="30"> Placa mãe</a>
                <a class="nav-link nav-item op text-center" style="color: black;" href="gpus.html"><img
                      src="assets/images/placa-de-video.svg" width="30" height="30"> Placa de vídeo</a>
-               <a class="nav-link nav-item op text-center" style="color: black;" href="#psu"><img
+               <a class="nav-link nav-item op text-center" style="color: black;" href="psu.html"><img
                      src="assets/images/energy-svgrepo-com.svg" width="30" height="30"> Fonte de alimentação</a>
-               <a class="nav-link nav-item op text-center" style="color: black;" href="#case"><img
+               <a class="nav-link nav-item op text-center" style="color: black;" href="case.html"><img
                      src="assets/images/pc-svgrepo-com.svg" width="30" height="30"> Gabinete</a>
-               <a class="nav-link nav-item op text-center" style="color: black;" href="#ram"><i
+               <a class="nav-link nav-item op text-center" style="color: black;" href="ram.html"><i
                      class="fas fa-memory"></i> Memória RAM</a>
-               <a class="nav-link nav-item op text-center" style="color: black;" onclick="mostrar('hdd')" href="#hdd"><i
-                     class="far fa-hdd"></i> Disco rígido</a>
-               <a class="nav-link nav-item op text-center" style="color: black;" href="#pcs"><img
+               <a class="nav-link nav-item op text-center" style="color: black;" href="hdd.html"><i
+                     class="far fa-hdd"></i>
+                  Disco rígido</a>
+               <a class="nav-link nav-item op text-center" style="color: black;" href="setups.html"><img
                      src="assets/images/computer-svgrepo-com.svg" width="30" height="30"> Computadores</a>
 
             </div>
             <div class="navbar-nav ml-auto" style="padding: 40px;">
                <a class="nav-link nav-item text-center" style="color: black;" href="#carrinho"><img
-                     src="assets/images/shopping-cart-svgrepo-com.svg" width="30" height="30"> Carrinho de
-                  compras</a>
+                     src="assets/images/shopping-cart-svgrepo-com.svg" width="30" height="30"> Carrinho de compras</a>
                <a class="nav-link nav-item text-center" style="color: black;" href="#monte"><img
                      src="assets/images/wrench-tool-fix-repair-svgrepo-com.svg" width="30" height="30"> Monte o seu
                   PC</a>
-               <a class="nav-link nav-item text-center" style="color: black;" href="#login"><i
-                     class="fas fa-sign-in-alt"></i> Entrar</a>
+               <a class="nav-link nav-item text-center" style="color: black;" href="#loginModal" data-toggle="modal"><i
+                     class="fas fa-sign-in-alt"></i> Entrar ou registrar-se</a>
             </div>
          </div>
       </div>
    </nav>
-
-   <div class="container" style="padding-top: 150px; padding-left: 100px;">
-      <div class="row" style="padding: 20px;">
-         <div class=" col-sm" style="padding: 20px;">
-            <div class="card" style="width: 18rem;">
-               <img class="w-50 h-50" src="assets/images/gigabyte ab350m-ds3h v2.jpg" alt="Placa mãe GA-AB350M-DS3H">
-               <div class="card-body">
-                  <h5 class="card-title">Placa mãe GA-AB350M-DS3H</h5>
-                  <p class="card-text">R$ 450,00</p>
-                  <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary center" data-toggle="modal"
-                     data-target="#GA-AB350M-DS3H">
-                     Detalhes
+   <div>
+      <div>
+         <h3 class="margin-auto p-lg-5">Itens mais vendidos</h3>
+      </div>
+      <!-- Button to open the modal login form -->
+      <!-- Modal -->
+      <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
                   </button>
-
-                  <!-- Modal -->
-                  <div class="modal fade" id="GA-AB350M-DS3H" tabindex="-1" role="dialog"
-                     aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                     <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                           <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLongTitle">GA-AB350M-DS3H</h5>
-                              <button type="button" class="Fechar" data-dismiss="modal" aria-label="Fechar">
-                                 <span aria-hidden="true">&times;</span>
-                              </button>
-                           </div>
-                           <div class="modal-body">
-                              Características:<br>
-                              <br>
-                              - Marca: Gigabyte<br>
-                              <br>
-                              - Modelo: GA-AB350M-DS3H V2<br>
-                              <br>
-                              <br>
-                              <br>
-                              Especificações:<br>
-                              <br>
-                              <br>
-                              <br>
-                              CPU:<br>
-                              <br>
-                              - Soquete AM4: Suporte para a segunda geração Ryzen / Ryzen com Radeon Vega Graphics /
-                              Athlon com processadores Radeon Vega Graphics / Ryzen de 1ª geração / 7ª geração da
-                              série A / Athlon X4<br>
-                              <br>
-                              - Potência Máxima: 105W*<br>
-                              <br>
-                              * Por favor, consulte "Lista de Suporte da CPU" para mais informações.<br>
-                              <br>
-                              <br>
-                              <br>
-                              Chipset:<br>
-                              <br>
-                              - AMD B350<br>
-                              <br>
-                              <br>
-                              <br>
-                              Memória:<br>
-                              <br>
-                              - 4x Soquetes DDR4 DIMM suportando até 64 GB de memória do sistema<br>
-                              <br>
-                              - Arquitetura de memória dual channel<br>
-                              <br>
-                              - Suporte para módulos de memória DDR4 3200 (OC) / 2933 (OC) / 2667 * / 2400 / 2133
-                              MHz<br>
-                              <br>
-                              * O suporte real pode variar de acordo com a CPU.<br>
-                              <br>
-                              - Suporte para módulos de memória DIMM 1Rx8 / 2Rx8 sem buffer ECC (operam em modo
-                              não-ECC)<br>
-                              <br>
-                              - Suporte para módulos de memória DIMM não-bufferizados 1Rx8 / 2Rx8 / 1Rx16 não-ECC<br>
-                              <br>
-                              - Suporte para módulos de memória Extreme Memory Profile (XMP)<br>
-                              <br>
-                              (Por favor, consulte "Lista de Suporte de Memória" para mais informações.)<br>
-                              <br>
-                              <br>
-                              <br>
-                              Gráficos Onboard:<br>
-                              <br>
-                              - Processador gráfico integrado: 1 porta DVI-D, suportando uma resolução máxima de
-                              1920x1200 @ 60 Hz<br>
-                              <br>
-                              * A porta DVI-D não suporta conexão D-Sub por adaptador.<br>
-                              <br>
-                              - 1x Porta HDMI, suportando uma resolução máxima de 4096x2160 @ 24 Hz<br>
-                              <br>
-                              * Suporte para a versão HDMI 1.4.<br>
-                              <br>
-                              - Memória compartilhada máxima de 2 GB<br>
-                              <br>
-                              * O suporte real pode variar de acordo com a CPU.<br>
-                              <br>
-                              <br>
-                              <br>
-                              Áudio:<br>
-                              <br>
-                              - Codec Realtek ALC887<br>
-                              <br>
-                              - Áudio de alta definição: 2 / 4 / 5.1 / 7.1-channel<br>
-                              <br>
-                              * Para configurar o áudio de 7.1 canais, é necessário usar um módulo de áudio do painel
-                              frontal de HD e ativar o recurso de áudio multicanal através do driver de áudio.<br>
-                              <br>
-                              - Suporte para saída S / PDIF<br>
-                              <br>
-                              <br>
-                              <br>
-                              LAN:<br>
-                              <br>
-                              - Chip LAN Realtek GbE (10/100/1000 Mbit)<br>
-                              <br>
-                              <br>
-                              <br>
-                              Slots de expansão:<br>
-                              <br>
-                              - 1x Slot PCI Express x16, rodando a x16 (PCIEX16)<br>
-                              <br>
-                              * Para um ótimo desempenho, se apenas uma placa de vídeo PCI Express for instalada,
-                              certifique-se de instalá-la no slot PCIEX16.<br>
-                              <br>
-                              * O suporte real pode variar de acordo com a CPU.<br>
-                              <br>
-                              (O slot PCIEX16 está em conformidade com o padrão PCI Express 3.0.)<br>
-                              <br>
-                              - 1x Slot PCI Express x16, rodando a x4 (PCIEX4)<br>
-                              <br>
-                              - 1x Slot PCI Express x1<br>
-                              <br>
-                              (os slots PCIEX4 e PCI Express x1 estão em conformidade com o padrão PCI Express
-                              2.0).<br>
-                              <br>
-                              <br>
-                              <br>
-                              Interface de armazenamento:<br>
-                              <br>
-                              - 1x Conector M.2 (soquete 3, tecla M, tipo 2242/2260/2280/22110 SATA e suporte PCIe x4
-                              / x2 * SSD)<br>
-                              <br>
-                              * Suporta apenas SSDs M.2 SATA ao usar um AMD Athlon série 200 / 7th Geração A-series
-                              ou Athlon APU.<br>
-                              <br>
-                              - 4x Conectores SATA de 6 Gb/s<br>
-                              <br>
-                              - Suporte para RAID 0, RAID 1 e RAID 10<br>
-                              <br>
-                              * Consulte "1-7 Conectores internos" para os avisos de instalação dos conectores M.2 e
-                              SATA.<br>
-                              <br>
-                              <br>
-                              <br>
-                              USB:<br>
-                              <br>
-                              <br>
-                              <br>
-                              Chipset:<br>
-                              <br>
-                              - 2x Portas USB 3.1 Gen 1 disponíveis através do conector USB interno<br>
-                              <br>
-                              - 8x Portas USB 2.0 / 1.1 (4 portas no painel traseiro, 4 portas disponíveis através
-                              dos conectores USB internos)<br>
-                              <br>
-                              <br>
-                              <br>
-                              CPU:<br>
-                              <br>
-                              - 4x Portas USB 3.1 Gen 1 no painel traseiro<br>
-                              <br>
-                              <br>
-                              <br>
-                              Conectores Internos I/O:<br>
-                              <br>
-                              - 1x Conector de alimentação principal ATX de 24 pinos<br>
-                              <br>
-                              - 1x Conector de alimentação ATX 12V de 8 pinos<br>
-                              <br>
-                              - 1x Comunicação do ventilador da CPU<br>
-                              <br>
-                              - 1x Comunicação do ventilador do sistema<br>
-                              <br>
-                              - 1x Conector M.2 soquete 3<br>
-                              <br>
-                              - 4x Conectores SATA de 6 Gb/s<br>
-                              <br>
-                              - 1x Comunicação do painel frontal<br>
-                              <br>
-                              - 1x Comunicação de áudio do painel frontal<br>
-                              <br>
-                              - 1x Comunicação de saída S / PDIF<br>
-                              <br>
-                              - 1x Comunicação de faixa de LED RGB<br>
-                              <br>
-                              - 1x Conector USB 3.1 Gen 1<br>
-                              <br>
-                              - 2x Comunicações USB 2.0 / 1.1<br>
-                              <br>
-                              - 1x Comunicação Trusted Platform Module (TPM) (2x10 pinos, apenas para o módulo
-                              GC-TPM2.0)<br>
-                              <br>
-                              - 1x Comunicação da porta serial<br>
-                              <br>
-                              - 1x Jumper Clear CMOS<br>
-                              <br>
-                              <br>
-                              <br>
-                              Conectores do Painel Traseiro:<br>
-                              <br>
-                              - 1x Porta de teclado / mouse PS/2<br>
-                              <br>
-                              - 1x Porta DVI-D<br>
-                              <br>
-                              - 1x Porta HDMI<br>
-                              <br>
-                              - 4x Portas USB 3.1 Gen 1<br>
-                              <br>
-                              - 4x Portas USB 2.0 / 1.1<br>
-                              <br>
-                              - 1x Porta RJ-45<br>
-                              <br>
-                              - 3x Tomadas de áudio<br>
-                              <br>
-                              <br>
-                              <br>
-                              Controlador I / O:<br>
-                              <br>
-                              - Chip Controlador ITE I / O<br>
-                              <br>
-                              <br>
-                              <br>
-                              Monitoramento H / W:<br>
-                              <br>
-                              - Detecção de tensão<br>
-                              <br>
-                              - Detecção de temperatura<br>
-                              <br>
-                              - Detecção de velocidade do ventilador<br>
-                              <br>
-                              - Aviso de superaquecimento<br>
-                              <br>
-                              - Aviso de falha do ventilador<br>
-                              <br>
-                              - Controle de velocidade do ventilador<br>
-                              <br>
-                              *Se a função de controle de velocidade do ventilador é suportada dependerá do cooler
-                              que você instalar.<br>
-                              <br>
-                              <br>
-                              <br>
-                              BIOS:<br>
-                              <br>
-                              - 1x 128 Mbit de flash<br>
-                              <br>
-                              - Uso do BIOS UEFI AMI licenciado<br>
-                              <br>
-                              - PnP 1.0a, DMI 2.7, WfM 2.0, SM BIOS 2.7, ACPI 5.0<br>
-                              <br>
-                              <br>
-                              <br>
-                              Recursos Especiais:<br>
-                              <br>
-                              - Suporte para o APP Center*<br>
-                              <br>
-                              - @BIOS<br>
-                              <br>
-                              - 3D OSD<br>
-                              <br>
-                              - AutoGreen<br>
-                              <br>
-                              - Configuração do BIOS<br>
-                              <br>
-                              - Cloud Station<br>
-                              <br>
-                              - Temperatura de Cor<br>
-                              <br>
-                              - EasyTune<br>
-                              <br>
-                              - Rápido Boot<br>
-                              <br>
-                              - Game Boost<br>
-                              <br>
-                              - ON / OFF Carregar<br>
-                              <br>
-                              - RGB Fusion<br>
-                              <br>
-                              - Smart Backup<br>
-                              <br>
-                              - Inteligente Teclado<br>
-                              <br>
-                              - Inteligente TimeLock<br>
-                              <br>
-                              - Sistema Visualizador de Informações<br>
-                              <br>
-                              - USB Blocker<br>
-                              <br>
-                              - V-Tuner<br>
-                              <br>
-                              - Suporte para Q-Flash<br>
-                              <br>
-                              - Suporte para instalação do Xpress<br>
-                              <br>
-                              <br>
-                              <br>
-                              *Os aplicativos disponíveis no APP Center podem variar de acordo com o modelo da
-                              placa-mãe. As funções suportadas de cada aplicativo também podem variar dependendo das
-                              especificações da placa mãe.<br>
-                              <br>
-                              <br>
-                              <br>
-                              Software:<br>
-                              <br>
-                              - Norton Internet Security (versão OEM)<br>
-                              <br>
-                              - cFosSpeed<br>
-                              <br>
-                              <br>
-                              <br>
-                              Sistema Operacional:<br>
-                              <br>
-                              - Suporte para o Windows 10 de 64 bits<br>
-                              <br>
-                              - Suporte para o Windows 7 de 64 bits<br>
-                              <br>
-                              * Para suportar o Windows 7 de 64 bits, você deve instalar uma CPU AMD Ridge Ridge
-                              Summit.<br>
-                              <br>
-                              * Baixe o "Windows USB Installation Tool" do site da GIGABYTE e instale-o antes de
-                              instalar o Windows 7.<br>
-                              <br>
-                              <br>
-                              <br>
-                              Fator de forma:<br>
-                              <br>
-                              - Formato: Micro ATX<br>
-                              <br>
-                              - Dimensões: 24.4 x 21.5 cm<br>
-                              <br>
-                              <br>
-                              <br>
-                              Conteúdo da Embalagem:<br>
-                              <br>
-                              - Placa Mãe Gigabyte<br>
-                              <br>
-                              - Driver de Instalação<br>
-                              <br>
-                              - Guia do Usuário<br>
-                              <br>
-                              <br>
-                              <br>
-                              NOTAS:<br>
-                              <br>
-                              <br>
-                              <br>
-                              1 - Devido às diferentes condições de suporte do Linux fornecidas pelos fornecedores de
-                              chipsets, faça o download do driver Linux no site dos fornecedores de chipsets ou no
-                              site de terceiros.<br>
-                              <br>
-                              <br>
-                              <br>
-                              2 - A maioria dos fornecedores de hardware / software pode não oferecer mais drivers
-                              para suportar o Win9X / ME / 2000 / XP. Se os drivers estiverem disponíveis nos
-                              fornecedores, nós os atualizaremos no site da GIGABYTE.<br>
-                              <br>
-                              <br>
-                              Garantia<br>
-                              1 ano de garantia<br>
-                              (9 meses de garantia contratual junto ao fabricante + 3 meses referentes à garantia
-                              legal, nos termos do artigo 26, II, do Código de Defesa do Consumidor)<br>
-                              <br>
-                              <br>
-                              Peso<br>
-                              800 gramas (bruto com embalagem)
-                           </div>
-                           <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                              <!--<button type="button" class="btn btn-primary">Adicionar ao carrinho</button>-->
-                              <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover"
-                                 data-placement="top" data-content="Item Adicionado ao carrinho!">
-                                 Adicionar ao carrinho
-                              </button>
-                           </div>
+               </div>
+               <div class="modal-body">
+                  <form action="">
+                     <div class="form-group row">
+                        <label for="nome" class="col-form-label col-lg-2">Usuário</label>
+                        <div class="col-lg-10">
+                           <input type="text" name="nome" class="form-control" placeholder="Usuário" id="userEmail">
                         </div>
                      </div>
-                  </div>
+                     <div class="form-group row">
+                        <label for="senha" class="col-form-label col-lg-2">Senha</label>
+                        <div class="col-lg-10 center">
+                           <input type="password" placeholder="Senha" name="psw" id="senhaLogin">
+                        </div>
+                     </div>
+                     <div class="form-group row center">
+                        <h5 style="text-align: center;">Não possui conta?</h5>
+                        <div class="container-fluid center" style="padding-top: 10px;">
+                           <button class="btn btn-primary center" style="width: 50%;" data-toggle="modal"
+                              data-dismiss="modal" data-target="#registroModal">Registrar-se</button>
+                        </div>
+
+                     </div>
+                  </form>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+                  <button type="button" class="btn btn-primary" id="botaoLogin">Entrar</button>
                </div>
             </div>
          </div>
-         <div class="col-sm" style="padding: 20px;">
-            <div class="card" style="width: 18rem;">
-               <img class="w-50 h-50" src="assets/images/placa-mae-asrock-a320m-hdv.jpg"
-                  alt="Processador Intel Core i5 9600k">
-               <div class="card-body">
-                  <h5 class="card-title">Asrock-A320M-HDV-R4.0</h5>
-                  <p class="card-text">R$ 1200,00</p>
-                  <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary center" data-toggle="modal"
-                     data-target="#asrock-a320m-hdv">
-                     Detalhes
-                  </button>
+      </div>
 
-                  <!-- Modal -->
-                  <div class="modal fade" id="asrock-a320m-hdv" tabindex="-1" role="dialog"
-                     aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                     <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                           <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLongTitle">Asrock A320M-HDV R4.0</h5>
-                              <button type="button" class="Fechar" data-dismiss="modal" aria-label="Fechar">
-                                 <span aria-hidden="true">&times;</span>
-                              </button>
-                           </div>
-                           <div class="modal-body center text-body">
-                              Características:<br>
-                              <br>
-                              - Marca: ASRock<br>
-                              <br>
-                              - Modelo: A320M-HDV R4.0<br>
-                              <br>
-                              <br>
-                              <br>
-                              Especificações:<br>
-                              <br>
-                              <br>
-                              <br>
-                              Recursos ASRock:<br>
-                              <br>
-                              <br>
-                              <br>
-                              ASRock Super Alloy:<br>
-                              <br>
-                              - PCB de tecido de vidro de alta densidade<br>
-                              <br>
-                              - PCB preto safira<br>
-                              <br>
-                              - ASRock Ultra M.2 (PCIe Gen3 x4 e SATA3)<br>
-                              <br>
-                              - ASRock Full Spike Protection (para todas as portas USB, Áudio, LAN)<br>
-                              <br>
-                              - ASRock Live Update & APP Shop<br>
-                              <br>
-                              <br>
-                              <br>
-                              CPU:<br>
-                              <br>
-                              - Suporta APUs AMD Socket AM4 da série A (Bristol Ridge) e CPUs da série Ryzen
-                              (Matisse, Picasso, Summit Ridge, Raven Ridge e Pinnacle Ridge)<br>
-                              <br>
-                              - Projeto em 6 fases de potência<br>
-                              <br>
-                              - Suporta CPU de até 105W<br>
-                              <br>
-                              <br>
-                              <br>
-                              Chipset:<br>
-                              <br>
-                              - AMD Promontory A320<br>
-                              <br>
-                              <br>
-                              <br>
-                              Memória:<br>
-                              <br>
-                              - Tecnologia de memória DDR4 de canal duplo<br>
-                              <br>
-                              - 2 slots DIMM DDR4<br>
-                              <br>
-                              - Os processadores AMD Ryzen series (Matisse) suportam memória DDR4
-                              3200/2933/2667/2400/2133 ECC e não ECC, sem buffer *<br>
-                              <br>
-                              - CPUs AMD Ryzen series (Pinnacle Ridge ) suportam memória DDR4 3200+ (OC) / 2933 (OC)
-                              / 2667/2400/2133 ECC e não ECC, sem buffer *<br>
-                              <br>
-                              - CPUs da série AMD Ryzen (Picasso) suportam DDR4 2933/2667/2400/2133 não ECC , memória
-                              sem buffer *<br>
-                              <br>
-                              - CPUs da série AMD Ryzen (Summit Ridge) suportam DDR4 3200+ (OC) / 2933 (OC) /
-                              2667/2400/2133 ECC e memória sem buffer do ECC e não ECC *<br>
-                              <br>
-                              - CPUs da série AMD Ryzen ( Raven Ridge) suportam memória DDR4 3200+ (OC) /
-                              2933/2667/2400/2133 não ECC e sem buffer *<br>
-                              <br>
-                              - AMD 7 th As APUs da série A da série suportam memória DDR4 2400/2133 não ECC e sem
-                              buffer *<br>
-                              <br>
-                              - Capacidade máx. capacidade da memória do sistema: 32GB **<br>
-                              <br>
-                              - 15μ Gold Contact nos slots DIMM<br>
-                              <br>
-                              <br>
-                              <br>
-                              * Para CPUs da série Ryzen (Picasso e Raven Ridge), o ECC é suportado apenas com CPUs
-                              PRO.<br>
-                              <br>
-                              <br>
-                              <br>
-                              ** Devido à limitação do sistema operacional, o tamanho real da memória pode ser
-                              inferior a 4 GB para a reserva do uso no sistema Windows de 32 bits . Para Windows de
-                              64 bits com CPU de 64 bits, não existe essa limitação.<br>
-                              <br>
-                              <br>
-                              <br>
-                              BIOS:<br>
-                              <br>
-                              - BIOS legal AMI UEFI de 128Mb com suporte a GUI<br>
-                              <br>
-                              - Suporta "Plug and Play"<br>
-                              <br>
-                              - Eventos de ativação de conformidade com ACPI 5.1<br>
-                              <br>
-                              - Suporta jumperfree<br>
-                              <br>
-                              - Suporte a SMBIOS 2.3<br>
-                              <br>
-                              - Multi-ajuste de tensão DRAM<br>
-                              <br>
-                              <br>
-                              <br>
-                              Gráficos:<br>
-                              <br>
-                              - Gráficos integrados da série AMD Radeon Vega na APU da série Ryzen *<br>
-                              <br>
-                              - Gráficos integrados da série R AMD Radeon na APU da série A *<br>
-                              <br>
-                              - DirectX 12, Pixel Shader 5.0<br>
-                              <br>
-                              - Memória compartilhada padrão de 2 GB. A memória compartilhada máxima suporta até 16
-                              GB. **<br>
-                              <br>
-                              - Três opções de saída gráfica: D-Sub, DVI-D e HDMI<br>
-                              <br>
-                              - Suporta Monitor Triplo<br>
-                              <br>
-                              - Suporta HDMI com no máx. resolução de até 4K x 2K (4096x2160) a 24Hz / (3840x2160) a
-                              30Hz<br>
-                              <br>
-                              - Suporta DVI-D com capacidade máx. resolução de até 1920x1200 a 60Hz<br>
-                              <br>
-                              - Suporta D-Sub com máx. resolução de até 2048x1536 a 60Hz<br>
-                              <br>
-                              - Suporta sincronização automática de lábios, cores profundas (12bpc), xvYCC e HBR
-                              (áudio de alta taxa de bits) com porta HDMI (é necessário um monitor HDMI
-                              compatível)<br>
-                              <br>
-                              - Suporta HDCP 1.4 com portas DVI-D e HDMI 1.4<br>
-                              <br>
-                              - Suporta reprodução de Blu-ray (BD) Full HD 1080p com portas DVI-D e HDMI<br>
-                              <br>
-                              <br>
-                              <br>
-                              * O suporte real pode variar de acordo com a CPU<br>
-                              <br>
-                              <br>
-                              <br>
-                              ** A memória compartilhada máxima de 16 GB requer 32 GB de memória do sistema
-                              instalada.<br>
-                              <br>
-                              <br>
-                              <br>
-                              Áudio:<br>
-                              <br>
-                              - Áudio HD 7.1 CH (Codec de áudio Realtek ALC887)<br>
-                              <br>
-                              - Suporta proteção contra surtos<br>
-                              <br>
-                              - ELNA Audio Caps<br>
-                              <br>
-                              <br>
-                              <br>
-                              LAN:<br>
-                              <br>
-                              - LAN Gigabit PCIE x1 10/100/1000 Mb/s<br>
-                              <br>
-                              - Realtek RTL8111H<br>
-                              <br>
-                              - Suporta Wake-On-LAN<br>
-                              <br>
-                              - Suporta proteção contra relâmpagos / ESD<br>
-                              <br>
-                              - Suporta Ethernet 802.3az com eficiência energética<br>
-                              <br>
-                              - Suporta PXE<br>
-                              <br>
-                              <br>
-                              <br>
-                              Slots:<br>
-                              <br>
-                              <br>
-                              <br>
-                              CPUs AMD série Ryzen (Matisse, Summit Ridge e Pinnacle de Ridge):<br>
-                              <br>
-                              - 1x PCI Express 3.0 X16 (PCIE2: modo x16) *<br>
-                              <br>
-                              <br>
-                              <br>
-                              AMD 7 th A-Series APU:<br>
-                              <br>
-                              - 1x PCI Express 3.0 X16 (PCIE2: modo x8) *<br>
-                              <br>
-                              <br>
-                              <br>
-                              CPUs da série AMD Ryzen (Picasso, Raven Ridge):<br>
-                              <br>
-                              - 1x slot PCI Express 3.0 x16 (modo PCIE2: x8) *<br>
-                              <br>
-                              <br>
-                              <br>
-                              CPUs da série AMD Athlon:<br>
-                              <br>
-                              - 1x Slot PCI Express 3.0 x16 (modo PCIE2: x4) *<br>
-                              <br>
-                              - 1x PCI Express 2.0 x1 Slot<br>
-                              <br>
-                              <br>
-                              <br>
-                              * Suporta SSD NVMe como discos de inicialização<br>
-                              <br>
-                              <br>
-                              <br>
-                              Armazenamento:<br>
-                              <br>
-                              - 4x Conectores SATA3 de 6,0 Gb/s, suportam RAID (RAID 0, RAID 1 e RAID 10), NCQ, AHCI
-                              e Hot Plug<br>
-                              <br>
-                              - 1x Soquete Ultra M.2, suporta o tipo de chave M 2242/2260/2280 M.2 Módulo SATA3 6.0
-                              Gb / se módulo M.2 PCI Express até Gen3 x4 (32 Gb / s) (com Matisse, Picasso, Summit
-                              Ridge, Raven Ridge e Pinnacle Ridge) ou Gen3 x2 (16 Gb / s) (com A APU série-APU e
-                              Athlon série 2xxGE) *<br>
-                              <br>
-                              - Suporta Kit ASRock U.2<br>
-                              <br>
-                              <br>
-                              <br>
-                              * Suporta SSD NVMe como discos de inicialização.<br>
-                              <br>
-                              <br>
-                              <br>
-                              Conector:<br>
-                              <br>
-                              - 1x Header de porta COM<br>
-                              <br>
-                              - 1x Header TPM<br>
-                              <br>
-                              - 1x Header de intrusão e alto-falante do chassi<br>
-                              <br>
-                              - 1x Conector de ventilador da CPU (4 pinos) *<br>
-                              <br>
-                              - 2x Conectores de ventilador do chassi (1 x 4 pinos, 1 x 3 pinos) **<br>
-                              <br>
-                              - 1x Conector de alimentação ATX de 24 pinos<br>
-                              <br>
-                              - 1x Conector de alimentação de 12V e 12V<br>
-                              <br>
-                              - 1x Conector de áudio no painel frontal<br>
-                              <br>
-                              - 2x Conectores USB 2.0 (suporta 4 portas USB 2.0) (suporta proteção ESD)<br>
-                              <br>
-                              - 1x Header USB 3.1 Gen1 (Suporta 2 portas USB 3.1 Gen1) (Suporta Proteção ESD)<br>
-                              <br>
-                              <br>
-                              <br>
-                              * O conector da ventoinha da CPU suporta a ventoinha da CPU com potência máxima de 1A
-                              (12W).<br>
-                              <br>
-                              <br>
-                              <br>
-                              ** O conector do ventilador do chassi suporta o ventilador do chassi com potência
-                              máxima de 1A (12W).<br>
-                              <br>
-                              <br>
-                              <br>
-                              Painel Traseiro:<br>
-                              <br>
-                              - 1x Porta PS/2 de mouse / teclado<br>
-                              <br>
-                              - 1x Porta D-Sub<br>
-                              <br>
-                              - 1x Porta DVI-D<br>
-                              <br>
-                              - 1x Porta HDMI<br>
-                              <br>
-                              - 2x Portas USB 2.0 (suporta proteção contra ESD)<br>
-                              <br>
-                              - 4x Portas USB 3.1 Gen1 (suporta ESD Proteção)<br>
-                              <br>
-                              - 1x Porta LAN RJ-45 com LED (LED ACT / LINK e LED SPEED)<br>
-                              <br>
-                              - Conectores de áudio HD: Entrada de linha / Alto-falante frontal / Microfone<br>
-                              <br>
-                              <br>
-                              <br>
-                              Software e UEFI:<br>
-                              <br>
-                              <br>
-                              <br>
-                              Software:<br>
-                              <br>
-                              - Utilitário da placa-mãe ASRock (A-Tuning)<br>
-                              <br>
-                              - Carregador de aplicativos ASRock<br>
-                              <br>
-                              - ASRock XFast LAN<br>
-                              <br>
-                              <br>
-                              <br>
-                              UEFI:<br>
-                              <br>
-                              - ASRock Full HD UEFI<br>
-                              <br>
-                              - ASRock HD instantâneo - ASRock Instant Flash<br>
-                              <br>
-                              - ASRock Easy RAID Installer<br>
-                              <br>
-                              <br>
-                              <br>
-                              * Esses utilitários podem ser baixados na ASRock Live Update & APP Shop.<br>
-                              <br>
-                              <br>
-                              <br>
-                              Monitor de Hardware:<br>
-                              <br>
-                              - Sensor de temperatura da CPU / chassi<br>
-                              <br>
-                              - Tacômetro da ventoinha da CPU / chassi<br>
-                              <br>
-                              - Ventilador silencioso da CPU / chassi<br>
-                              <br>
-                              - Controle de várias velocidades da CPU / ventilador do chassi<br>
-                              <br>
-                              - Detecção CASE OPEN<br>
-                              <br>
-                              - Monitoramento de tensão: + 12V, + 5V, + 3.3V, Vcore<br>
-                              <br>
-                              <br>
-                              <br>
-                              Fator de Forma:<br>
-                              <br>
-                              - Formato: Micro ATX<br>
-                              <br>
-                              - Dimensões: 23 x 20.1 cm<br>
-                              <br>
-                              - Design de capacitor sólido<br>
-                              <br>
-                              <br>
-                              <br>
-                              OS:<br>
-                              <br>
-                              - Microsoft Windows 10 de 64 bits<br>
-                              <br>
-                              <br>
-                              <br>
-                              Certificações:<br>
-                              <br>
-                              - FCC, CE<br>
-                              <br>
-                              - Pronto para ErP / EuP (é necessária uma fonte de alimentação pronta para ErP /
-                              EuP)<br>
-                              <br>
-                              <br>
-                              <br>
-                              Conteúdo da Embalagem:<br>
-                              <br>
-                              - 1x Placa Mãe ASRock<br>
-                              <br>
-                              - 1x Guia de instalação rápida<br>
-                              <br>
-                              - 1x CD de suporte<br>
-                              <br>
-                              - 1x Blindagem I/O<br>
-                              <br>
-                              - 2x Cabos de dados SATA<br>
-                              <br>
-                              - 1x Parafuso para soquete M.2<br>
-                              <br>
-                              <br>
-                              Garantia<br>
-                              1 ano de garantia<br>
-                              (9 meses de garantia contratual junto ao fabricante + 3 meses referentes à garantia
-                              legal, nos termos do artigo 26, II, do Código de Defesa do Consumidor)<br>
-                              <br>
-                              <br>
-                              Peso<br>
-                              755 gramas (bruto com embalagem)
-                           </div>
-                           <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                              <!--<button type="button" class="btn btn-primary">Adicionar ao carrinho</button>-->
-                              <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover"
-                                 data-placement="top" data-content="Item Adicionado ao carrinho!">
-                                 Adicionar ao carrinho
-                              </button>
+      <!--Registro Modal-->
+      <div class="modal fade" id="registroModal" style="height: 100%">
+         <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <span class="modal-title">Registrar novo usuário</span>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <form action="">
+                     <fieldset class="form-group">
+                        <legend class="font-weight-bold">Informações Pessoais</legend>
+
+                        <div class="form-group row">
+                           <label for="nome" class="col-form-label col-lg-2">Nome</label>
+                           <div class="col-lg-10">
+                              <input type="text" name="nome" class="form-control" placeholder="Nome" id="nomeRegistro">
                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="col-sm" style="padding: 20px;">
-            <div class="card" style="width: 18rem;">
-               <img class="w-50 h-50" src="assets/images/placa-mae-gigabyte-h410m-h.jpg"
-                  alt="Placa mãe Gigabyte H410M-H">
-               <div class="card-body">
-                  <h5 class="card-title">Placa mãe Gigabyte H410M-H</h5>
-                  <p class="card-text">R$ 1900,00</p>
-                  <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary center" data-toggle="modal"
-                     data-target="#placa-mae-gigabyte-h410m-h">
-                     Detalhes
-                  </button>
-
-                  <!-- Modal -->
-                  <div class="modal fade" id="placa-mae-gigabyte-h410m-h" tabindex=" -1" role="dialog"
-                     aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                     <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                           <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLongTitle">Ryzen 7 3700X</h5>
-                              <button type="button" class="Fechar" data-dismiss="modal" aria-label="Fechar">
-                                 <span aria-hidden="true">&times;</span>
-                              </button>
-                           </div>
-                           <div class="modal-body">
-                              Características:<br>
-                              <br>
-                              - Marca: Gigabyte<br>
-                              <br>
-                              - Modelo: H410M H<br>
-                              <br>
-                              <br>
-                              <br>
-                              Especificações:<br>
-                              <br>
-                              <br>
-                              <br>
-                              CPU:<br>
-                              <br>
-                              - Suporte para 10 de Geração Intel ® Núcleo ™ i9 processadores / Intel ® Core ™ i7
-                              processadores / Intel ® Core ™ i5 processadores / Intel ® Core ™ i3 processadores / Intel
-                              ® Pentium ® processadores / Intel ® Celeron ® processadores no pacote LGA1200<br>
-                              <br>
-                              - O cache L3 varia com a CPU<br>
-                              <br>
-                              * Consulte "Lista de suporte da CPU" para obter mais informações.<br>
-                              <br>
-                              TDP: 1‎25W<br>
-                              <br>
-                              <br>
-                              <br>
-                              Chipset:<br>
-                              <br>
-                              - Chipset Intel ® H410 Express<br>
-                              <br>
-                              <br>
-                              <br>
-                              Memória:<br>
-                              <br>
-                              - Processadores Intel ® Core ™ i9 / i7: Suporte para módulos de memória DDR4
-                              2933/2666/2400/2133 MHz<br>
-                              <br>
-                              - Intel ® Core ™ i5 / i3 / Pentium ® / Celeron ® processadores: Suporte para DDR4
-                              2666/2400/2133 módulos de memória MHz<br>
-                              <br>
-                              - 2x soquetes DDR4 DIMM que suportam até 64 GB (capacidade DIMM única de 32 GB) de memória
-                              do sistema<br>
-                              <br>
-                              - Arquitetura de memória de canal duplo<br>
-                              <br>
-                              - Suporte para módulos de memória ECC sem buffer DIMM 1Rx8 / 2Rx8 (operam no modo não
-                              ECC)<br>
-                              <br>
-                              - Suporte para módulos de memória DIMM 1Rx8 / 2Rx8 / 1Rx16 sem buffer ECC<br>
-                              <br>
-                              - Suporte para módulos de memória Extreme Memory Profile (XMP)<br>
-                              <br>
-                              * Consulte "Lista de suporte de memória" para obter mais informações.<br>
-                              <br>
-                              <br>
-                              <br>
-                              Gráficos integrados:<br>
-                              <br>
-                              Processador gráfico integrado - Suporte para gráficos HD Intel®:<br>
-                              <br>
-                              - 1 porta D-Sub, suportando uma resolução máxima de 1920x1200 a 60 Hz<br>
-                              <br>
-                              - 1 x portas HDMI, suportando uma resolução máxima de 4096x2160 @ 30 Hz<br>
-                              <br>
-                              * Suporte para a versão HDMI 1.4 e HDCP 2.3.<br>
-                              <br>
-                              - Memória compartilhada máxima de 512 MB<br>
-                              <br>
-                              <br>
-                              <br>
-                              Áudio:<br>
-                              <br>
-                              - Codec Realtek ® ALC887<br>
-                              <br>
-                              - Áudio de alta definição<br>
-                              <br>
-                              - 2/4 / 5.1 / 7.1 canais<br>
-                              <br>
-                              * Para configurar o áudio de 7.1 canais, abra o software de áudio e selecione
-                              Configurações avançadas do dispositivo> Dispositivo de reprodução para alterar primeiro a
-                              configuração padrão. Por favor, visite o site da GIGABYTE para obter detalhes sobre a
-                              configuração do software de áudio.<br>
-                              <br>
-                              <br>
-                              <br>
-                              LAN:<br>
-                              <br>
-                              - Chip LAN Realtek ® GbE (1000 Mbit / 100 Mbit)<br>
-                              <br>
-                              <br>
-                              <br>
-                              Slots de expansão:<br>
-                              <br>
-                              - 1 slot PCI Express x16, executando x16<br>
-                              <br>
-                              - 2 x slots PCI Express x1 (os slots PCI Express estão em conformidade com o padrão PCI
-                              Express 3.0.)<br>
-                              <br>
-                              * Suporta até protocolos de gerenciamento de energia ASPM L1.2.<br>
-                              <br>
-                              <br>
-                              <br>
-                              Interface de armazenamento:<br>
-                              <br>
-                              - 1 x conector M.2 (soquete 3, chave M, tipo 2242/2260/2280 SATA e suporte a SSD PCIe
-                              x2)<br>
-                              <br>
-                              - 4 x conectores SATA de 6 Gb / s<br>
-                              <br>
-                              * Consulte "1-7 Conectores internos" para obter os avisos de instalação dos conectores M.2
-                              e SATA.<br>
-                              <br>
-                              * Os conectores M.2 suportam até protocolos de gerenciamento de energia ASPM L1.2
-                              PCIe.<br>
-                              <br>
-                              <br>
-                              <br>
-                              USB:<br>
-                              <br>
-                              Chipset:<br>
-                              <br>
-                              - 4 portas USB 3.2 Gen 1 (2 portas no painel traseiro, 2 portas disponíveis no conector
-                              USB interno)<br>
-                              <br>
-                              - 6 x portas USB 2.0 / 1.1 (4 portas no painel traseiro, 2 portas disponíveis através do
-                              conector USB interno)<br>
-                              <br>
-                              <br>
-                              <br>
-                              Conectores de E / S internos:<br>
-                              <br>
-                              - 1 x conector de alimentação principal ATX de 24 pinos<br>
-                              <br>
-                              - 1 x conector de alimentação ATX 12V de 8 pinos<br>
-                              <br>
-                              - 1 x header de cooler da CPU<br>
-                              <br>
-                              - 1 x header de cooler do sistema<br>
-                              <br>
-                              - 1 x header de tira LED RGB<br>
-                              <br>
-                              - 4 x conectores SATA de 6 Gb / s<br>
-                              <br>
-                              - 1 x conector M.2 Socket 3<br>
-                              <br>
-                              - 1 x header do painel frontal<br>
-                              <br>
-                              - 1 x conector de áudio no painel frontal<br>
-                              <br>
-                              - 1 x conector USB 3.2 Gen 1<br>
-                              <br>
-                              - 1 x conector USB 2.0 / 1.1<br>
-                              <br>
-                              - 1 x header Trusted Platform Module (somente para o módulo GC-TPM2.0 SPI / GC-TPM2.0 SPI
-                              2.0)<br>
-                              <br>
-                              - 1 x header de porta serial<br>
-                              <br>
-                              - 1 x jumper clear CMOS<br>
-                              <br>
-                              <br>
-                              <br>
-                              Conectores do painel traseiro:<br>
-                              <br>
-                              - 1 porta de teclado / mouse PS / 2<br>
-                              <br>
-                              - 1 x porta D-Sub<br>
-                              <br>
-                              - 1 x porta HDMI<br>
-                              <br>
-                              - 2 x portas USB 3.2 Gen 1<br>
-                              <br>
-                              - 4 x portas USB 2.0 / 1.1<br>
-                              <br>
-                              - 1 x porta RJ-45<br>
-                              <br>
-                              - 3 x tomadas de áudio<br>
-                              <br>
-                              <br>
-                              <br>
-                              Controlador de E / S:<br>
-                              <br>
-                              - Chip Controlador de E / S iTE ®<br>
-                              <br>
-                              <br>
-                              <br>
-                              Monitoramento H / W:<br>
-                              <br>
-                              - Detecção de tensão<br>
-                              <br>
-                              - Detecção de temperatura<br>
-                              <br>
-                              - Detecção de velocidade do cooler<br>
-                              <br>
-                              - Aviso de superaquecimento<br>
-                              <br>
-                              - Aviso de falha do cooler<br>
-                              <br>
-                              - Controle de velocidade do cooler<br>
-                              <br>
-                              * Se a função de controle de velocidade do ventilador é suportada, depende do cooler
-                              instalado.<br>
-                              <br>
-                              <br>
-                              <br>
-                              BIOS:<br>
-                              <br>
-                              - 1 x flash de 128 Mbit<br>
-                              <br>
-                              - Uso do BIOS AMI UEFI licenciado<br>
-                              <br>
-                              - PnP 1.0a, DMI 2.7, WfM 2.0, SM BIOS 2.7, ACPI 5.0<br>
-                              <br>
-                              <br>
-                              <br>
-                              Características únicas:<br>
-                              <br>
-                              - Suporte para o APP Center<br>
-                              <br>
-                              * Os aplicativos disponíveis no APP Center podem variar de acordo com o modelo da
-                              placa-mãe. As funções suportadas de cada aplicativo também podem variar, dependendo das
-                              especificações da placa-mãe.<br>
-                              <br>
-                              - @BIOS<br>
-                              <br>
-                              - Ambient LED<br>
-                              <br>
-                              - EasyTune<br>
-                              <br>
-                              - Fast Boot<br>
-                              <br>
-                              - Game Boost<br>
-                              <br>
-                              - ON/OFF Charge<br>
-                              <br>
-                              - Smart Backup<br>
-                              <br>
-                              - System Information Viewer<br>
-                              <br>
-                              - Suporte para Q-Flash<br>
-                              <br>
-                              - Suporte para instalação do Xpress<br>
-                              <br>
-                              <br>
-                              <br>
-                              Fator de forma:<br>
-                              <br>
-                              - Fator de forma Micro ATX; 22.6cm x 17.4cm<br>
-                              <br>
-                              <br>
-                              <br>
-                              Conteúdo embalagem:<br>
-                              <br>
-                              - 1x Placa Mãe Gigabyte H410M H<br>
-                              <br>
-                              - 1x Manual do Usuário<br>
-                              <br>
-                              <br>
-                              Garantia<br>
-                              1 ano de garantia<br>
-                              (9 meses de garantia contratual junto ao fabricante + 3 meses referentes à garantia legal,
-                              nos termos do artigo 26, II, do Código de Defesa do Consumidor)<br>
-                              <br>
-                              <br>
-                              Peso<br>
-                              665 gramas (bruto com embalagem)
-                           </div>
-                           <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                              <!--<button type="button" class="btn btn-primary">Adicionar ao carrinho</button>-->
-                              <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover"
-                                 data-placement="top" data-content="Item Adicionado ao carrinho!">
-                                 Adicionar ao carrinho
-                              </button>
+                        <div class="form-group row">
+                           <label for="e-mail" class="col-form-label col-lg-2">E-mail</label>
+                           <div class="col-lg-10">
+                              <input type="email" name="e-mail" class="form-control" placeholder="Endereço de e-mail."
+                                 id="emailRegistro">
                            </div>
                         </div>
-                     </div>
-                  </div>
+                        <div class="form-group row">
+                           <label class="col-form-label col-lg-2">Sexo</label>
+                           <div class="col-lg-10" style="padding-top: 7px;">
+                              <div class="form-check form-check-inline">
+                                 <input type="radio" id="sexo-masc" name="sexo" value="M" class="form-check-input">
+                                 <label for="sexo-masc" class="form-check-label">
+                                    Masculino
+                                 </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                 <input type="radio" id="sexo-fem" name="sexo" value="F" class="form-check-input">
+                                 <label for="sexo-fem" class="form-check-label">
+                                    Feminino
+                                 </label>
+                              </div>
+                              <div id="sexo-feedback" class="invalid-feedback">
+                                 Campo de preenchimento obrigatório.
+                              </div>
+                           </div>
+                        </div>
+                        <div class="form-group row">
+                           <label for="CPF" class="col-form-label col-lg-2">CPF</label>
+                           <div class="col-lg-10">
+                              <input type="text" id="cpf" name="cpf" class="form-control"
+                                 placeholder="Cadastro de pessoa física(Somente números)">
+                              <div class="invalid-feedback">
+                                 Este campo deve ser informado.
+                              </div>
+                           </div>
+                        </div>
+                        <div class="form-group row">
+                           <label for="cep" class="col-form-label col-lg-2">CEP</label>
+                           <div class="col-lg-10">
+                              <input type="text" id="cep" name="cep" class="form-control" placeholder="CEP">
+                              <div class="invalid-feedback">
+                                 Este campo deve ser informado.
+                              </div>
+                           </div>
+                        </div>
+                        <div class="form-group row">
+                           <label for="telefone" class="col-form-label col-lg-2">Número de telefone</label>
+                           <div class="col-lg-10">
+                              <input type="text" id="telefone" name="endereco" class="form-control"
+                                 placeholder="Somente números(DDD e o número).">
+                              <div class="invalid-feedback">
+                                 Este campo deve ser informado.
+                              </div>
+                           </div>
+                        </div>
+                     </fieldset>
+                     <fieldset class="form-group" style="margin-bottom: 0px;">
+                        <fieldset class="form-group" style="margin-bottom: 0px;">
+                           <div class="form-group row">
+                              <label for="objetivo" class="col-form-label col-lg-2 text-left text-lg-right">Estou me
+                                 inscrevendo no site com o objetivo de:</label>
+                              <div class="col-lg-10">
+                                 <select class="form-control form-control-sm" id="objetivo">
+                                    <option value="">-- Selecione uma opção --</option>
+                                    <option value="1">Montar um computador</option>
+                                    <option value="2">Comprar peças</option>
+                                    <option value="3">Fornecer peças</option>
+                                 </select>
+                              </div>
+                              <div class="invalid-feedback">
+                                 Campo de preenchimento obrigatório.
+                              </div>
+                           </div>
+                           <div class="form-group row">
+                              <label for="soube" class="col-form-label col-lg-2 text-left text-lg-right">Fiquei sabendo
+                                 da
+                                 loja por meio de:</label>
+                              <div class="col-lg-10" id="soube">
+                                 <div class="form-check">
+                                    <input type="checkbox" class="form-check-input soube" name="facebook" id="facebookCheck">
+                                    <label class="form-check-label soube" for="facebook">
+                                       Facebook
+                                    </label>
+                                 </div>
+                                 <div class="form-check">
+                                    <input type="checkbox" class="form-check-input soube" name="twitter"
+                                       id="twitterCheck">
+                                    <label class="form-check-label" for="twitter">
+                                       Twitter
+                                    </label>
+                                 </div>
+                                 <div class="form-check">
+                                    <input type="checkbox" class="form-check-input soube" name="youtube"
+                                       id="youtubeCheck">
+                                    <label class="form-check-label" for="youtube">
+                                       Youtube
+                                    </label>
+                                 </div>
+                                 <div class="form-check">
+                                    <input type="checkbox" class="form-check-input soube" name="email" id="emailCheck">
+                                    <label class="form-check-label" for="email">
+                                       E-mail
+                                    </label>
+                                 </div>
+                                 <div class="form-check">
+                                    <input type="checkbox" class="form-check-input soube" name="recomendado"
+                                       id="recomendadoCheck">
+                                    <label class="form-check-label" for="recomendado">
+                                       Recomendação de amigos ou parceiros
+                                    </label>
+                                 </div>
+                                 <div class="form-check">
+                                    <input type="checkbox" class="form-check-input soube" name="outros"
+                                       id="outrosCheck">
+                                    <label class="form-check-label" for="outros">
+                                       Outros
+                                    </label>
+                                 </div>
+                                 <div id="soube-feedback" class="invalid-feedback">
+                                    Campo de preenchimento obrigatório.
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="form-group row" style="padding-left: 10px;">
+                              <label for="" class="col-form-label col-lg-2 text-left text-lg-right">Deseja receber
+                                 mensagens com promoções e
+                                 novidades?</label>
+                              <div class="form-check form-check-inline" style="padding-left: 10px;">
+                                 <input class="form-check-input" type="radio" name="resposta" id="sim" value="s">
+                                 <label class="form-check-label" for="sim">
+                                    Sim
+                                 </label>
+                              </div>
+                              <div class="form-check form-check-inline" style="padding-left: 10px;">
+                                 <input class="form-check-input" type="radio" name="resposta" id="nao" value="n">
+                                 <label class="form-check-label" for="nao">
+                                    Não
+                                 </label>
+                              </div>
+                              <div id="resposta-feedback" class="invalid-feedback" style="padding-left: 17%;">
+                                 Campo de preenchimento obrigatório.
+                              </div>
+                           </div>
+
+                        </fieldset>
+                        <fieldset>
+                           <div class="form-check form-group row form-check-inline" style="padding-left: 17%;">
+                              <input class="form-check-input termos" type="checkbox" id="termosCheck">
+                              <label class="form-check-label" for="termosCheck">
+                                 Eu li os <a href="#" style="color: cornflowerblue;">termos de serviço</a> do site e
+                                 desejo
+                                 continuar
+                              </label>
+                              <div id="termos-feedback" class="invalid-feedback">
+                                 Campo de preenchimento obrigatório.
+                              </div>
+                              <button type="button" class="btn btn-primary" id="botaoEnviar"
+                                 style="padding-left: 10px; margin: 10px;">
+                                 Enviar
+                              </button>
+                           </div>
+                        </fieldset>
+
                </div>
+               </form>
             </div>
          </div>
+      </div>
 
-
+      <div class="container" style="padding-top: 150px; padding-left: 100px;">
          <div class="row" style="padding: 20px;">
-            <div class="col-sm" style="padding: 20px;">
+            <div class=" col-sm" style="padding: 20px;">
                <div class="card" style="width: 18rem;">
-                  <img class="w-50 h-50" src="assets/images/a320m-k-br.jpg" alt="Placa mãe Asus A320M-K-BR">
+                  <img class="w-50 h-50" src="assets/images/gigabyte ab350m-ds3h v2.jpg" alt="Placa mãe GA-AB350M-DS3H">
                   <div class="card-body">
-                     <h5 class="card-title">Placa mãe Asus A320M-K-BR</h5>
-                     <p class="card-text">R$ 500,00</p>
+                     <h5 class="card-title">Placa mãe GA-AB350M-DS3H</h5>
+                     <p class="card-text">R$ 450,00</p>
                      <!-- Button trigger modal -->
-                     <button type="button" class="btn btn-primary center" data-toggle="modal" data-target="#A320M-K-BR">
+                     <button type="button" class="btn btn-primary center" data-toggle="modal"
+                        data-target="#GA-AB350M-DS3H">
                         Detalhes
                      </button>
 
                      <!-- Modal -->
-                     <div class="modal fade" id="A320M-K-BR" tabindex="-1" role="dialog"
+                     <div class="modal fade" id="GA-AB350M-DS3H" tabindex="-1" role="dialog"
                         aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                            <div class="modal-content">
                               <div class="modal-header">
-                                 <h5 class="modal-title" id="exampleModalLongTitle">Asus A320M-K-BR</h5>
+                                 <h5 class="modal-title" id="exampleModalLongTitle">GA-AB350M-DS3H</h5>
                                  <button type="button" class="Fechar" data-dismiss="modal" aria-label="Fechar">
                                     <span aria-hidden="true">&times;</span>
                                  </button>
@@ -1199,9 +344,9 @@
                               <div class="modal-body">
                                  Características:<br>
                                  <br>
-                                 - Marca: ASUS<br>
+                                 - Marca: Gigabyte<br>
                                  <br>
-                                 - Modelo: A320M-K/BR<br>
+                                 - Modelo: GA-AB350M-DS3H V2<br>
                                  <br>
                                  <br>
                                  <br>
@@ -1209,273 +354,1052 @@
                                  <br>
                                  <br>
                                  <br>
-                                 Processador(es):<br>
+                                 CPU:<br>
                                  <br>
-                                 - AMD AM4 Socket for AMD Ryzen/7th Generation A-series/Athlon Processadores<br>
+                                 - Soquete AM4: Suporte para a segunda geração Ryzen / Ryzen com Radeon Vega Graphics /
+                                 Athlon com processadores Radeon Vega Graphics / Ryzen de 1ª geração / 7ª geração da
+                                 série A / Athlon X4<br>
                                  <br>
-                                 - Suporta CPU em até 8 cores<br>
+                                 - Potência Máxima: 105W*<br>
                                  <br>
-                                 - TDP: 105W<br>
+                                 * Por favor, consulte "Lista de Suporte da CPU" para mais informações.<br>
                                  <br>
                                  <br>
                                  <br>
                                  Chipset:<br>
                                  <br>
-                                 - AMD A320<br>
+                                 - AMD B350<br>
                                  <br>
                                  <br>
                                  <br>
                                  Memória:<br>
                                  <br>
-                                 - 2x DIMM, máximo de 32GB, DDR4 3200(O.C.)/2933(O.C.)/2666/2400/2133 MHz ECC and
-                                 non-ECC,
-                                 Un-buffered<br>
+                                 - 4x Soquetes DDR4 DIMM suportando até 64 GB de memória do sistema<br>
                                  <br>
-                                 - AMD Ryzen Processors<br>
+                                 - Arquitetura de memória dual channel<br>
                                  <br>
-                                 - Arquitetura de memória: Dois canais<br>
+                                 - Suporte para módulos de memória DDR4 3200 (OC) / 2933 (OC) / 2667 * / 2400 / 2133
+                                 MHz<br>
                                  <br>
-                                 * Suporte Hyper DIMM depende das características físicas de cada CPU.<br>
+                                 * O suporte real pode variar de acordo com a CPU.<br>
                                  <br>
-                                 - AMD 7th Generation A-series/Athlon Processors<br>
+                                 - Suporte para módulos de memória DIMM 1Rx8 / 2Rx8 sem buffer ECC (operam em modo
+                                 não-ECC)<br>
                                  <br>
-                                 - 2x DIMM, Max. 32GB, DDR4 2400/2133 MHz Non-ECC, Un-buffered Memory<br>
+                                 - Suporte para módulos de memória DIMM não-bufferizados 1Rx8 / 2Rx8 / 1Rx16 não-ECC<br>
                                  <br>
+                                 - Suporte para módulos de memória Extreme Memory Profile (XMP)<br>
                                  <br>
-                                 <br>
-                                 Gráfico:<br>
-                                 <br>
-                                 - Integrated AMD Radeon R Series Graphics in the 7th Generation A-Series APU *1<br>
-                                 <br>
-                                 - Saída Multi-VGA: portas HDMI/RGB<br>
-                                 <br>
-                                 - Suporta RGB com resolução máxima de 1920 por 1200 / 60 Hz<br>
-                                 <br>
-                                 - Supports HDMI 1.4b with max. resolution 4096 x 2160 @ 24 Hz / 2560 x 1600 @ 60 Hz<br>
-                                 <br>
-                                 - Máximo de memória compartilhada 2048 MB<br>
+                                 (Por favor, consulte "Lista de Suporte de Memória" para mais informações.)<br>
                                  <br>
                                  <br>
                                  <br>
-                                 Slots de expansão:<br>
+                                 Gráficos Onboard:<br>
                                  <br>
-                                 - AMD Ryzen Processors: 1 x PCIe 3.0/2.0 (x16)<br>
+                                 - Processador gráfico integrado: 1 porta DVI-D, suportando uma resolução máxima de
+                                 1920x1200 @ 60 Hz<br>
                                  <br>
-                                 - AMD 7th Generation A-series/Athlon Processors: 1 x PCIe 3.0/2.0 (x8 mode)<br>
+                                 * A porta DVI-D não suporta conexão D-Sub por adaptador.<br>
                                  <br>
-                                 - AMD A320 chipset: 2 x PCIe 2.0 x1<br>
+                                 - 1x Porta HDMI, suportando uma resolução máxima de 4096x2160 @ 24 Hz<br>
                                  <br>
+                                 * Suporte para a versão HDMI 1.4.<br>
                                  <br>
+                                 - Memória compartilhada máxima de 2 GB<br>
                                  <br>
-                                 Armazenamento:<br>
-                                 <br>
-                                 <br>
-                                 <br>
-                                 AMD A320 chipset:<br>
-                                 <br>
-                                 - 4x Porta(s) SATA 6Gb/s, cinza(s)<br>
-                                 <br>
-                                 - Suporta Raid 0, 1, 10<br>
-                                 <br>
-                                 <br>
-                                 <br>
-                                 AMD Ryzen Processors:<br>
-                                 <br>
-                                 - 1x M.2 Socket 3<br>
-                                 <br>
-                                 <br>
-                                 <br>
-                                 AMD Ryzen/7th Generation A-series/Athlon Processors:<br>
-                                 <br>
-                                 - 1x M.2 Socket 3<br>
-                                 <br>
-                                 <br>
-                                 <br>
-                                 LAN:<br>
-                                 <br>
-                                 - 1x Gigabit LAN Realtek RTL8111H<br>
-                                 <br>
-                                 - 1x Gigabit LAN<br>
+                                 * O suporte real pode variar de acordo com a CPU.<br>
                                  <br>
                                  <br>
                                  <br>
                                  Áudio:<br>
                                  <br>
-                                 - Realtek ALC887 com 8 canais - CODEC de alta definição<br>
+                                 - Codec Realtek ALC887<br>
                                  <br>
+                                 - Áudio de alta definição: 2 / 4 / 5.1 / 7.1-channel<br>
                                  <br>
+                                 * Para configurar o áudio de 7.1 canais, é necessário usar um módulo de áudio do painel
+                                 frontal de HD e ativar o recurso de áudio multicanal através do driver de áudio.<br>
                                  <br>
-                                 Portas USB:<br>
+                                 - Suporte para saída S / PDIF<br>
                                  <br>
-                                 - AMD Ryzen/7th Generation A-series/Athlon Processors: 4 porta(s) USB 3.0 (4 no painel
-                                 traseiro, azul)<br>
                                  <br>
-                                 - AMD A320 chipset: 2 porta(s) USB 3.0 (conectores internos para mais 2 porta(s)<br>
                                  <br>
-                                 - AMD A320 chipset: 6 porta(s) USB 2.0 (2 no painel traseiro, , conectores internos
-                                 para
-                                 mais 4 porta(s)<br>
+                                 LAN:<br>
                                  <br>
+                                 - Chip LAN Realtek GbE (10/100/1000 Mbit)<br>
                                  <br>
                                  <br>
-                                 Recursos especiais:<br>
                                  <br>
+                                 Slots de expansão:<br>
                                  <br>
+                                 - 1x Slot PCI Express x16, rodando a x16 (PCIEX16)<br>
                                  <br>
-                                 ASUS 5X Protection III:<br>
+                                 * Para um ótimo desempenho, se apenas uma placa de vídeo PCI Express for instalada,
+                                 certifique-se de instalá-la no slot PCIEX16.<br>
                                  <br>
-                                 - ASUS SafeSlot Core: Fortified PCIe Slot prevents damage<br>
+                                 * O suporte real pode variar de acordo com a CPU.<br>
                                  <br>
-                                 - ASUS LANGuard: Protects against LAN surges, lightning strikes and static-electricity
-                                 discharges!<br>
+                                 (O slot PCIEX16 está em conformidade com o padrão PCI Express 3.0.)<br>
                                  <br>
-                                 - ASUS Overvoltage Protection: World-class circuit-protecting power design<br>
+                                 - 1x Slot PCI Express x16, rodando a x4 (PCIEX4)<br>
                                  <br>
-                                 - ASUS Stainless-Steel Back I/O: 3X corrosion-resistance for greater durability!<br>
+                                 - 1x Slot PCI Express x1<br>
                                  <br>
-                                 - ASUS DIGI+ VRM: 6 Phase digital power design<br>
+                                 (os slots PCIEX4 e PCI Express x1 estão em conformidade com o padrão PCI Express
+                                 2.0).<br>
                                  <br>
                                  <br>
                                  <br>
-                                 Recursos exclusivos ASUS:<br>
+                                 Interface de armazenamento:<br>
                                  <br>
-                                 - AI Suite 3<br>
+                                 - 1x Conector M.2 (soquete 3, tecla M, tipo 2242/2260/2280/22110 SATA e suporte PCIe x4
+                                 / x2 * SSD)<br>
                                  <br>
-                                 - Ai Charger<br>
+                                 * Suporta apenas SSDs M.2 SATA ao usar um AMD Athlon série 200 / 7th Geração A-series
+                                 ou Athlon APU.<br>
                                  <br>
+                                 - 4x Conectores SATA de 6 Gb/s<br>
                                  <br>
+                                 - Suporte para RAID 0, RAID 1 e RAID 10<br>
                                  <br>
-                                 Solução térmica silenciosa ASUS:<br>
+                                 * Consulte "1-7 Conectores internos" para os avisos de instalação dos conectores M.2 e
+                                 SATA.<br>
                                  <br>
-                                 - Stylish Fanless Design Heat-sink solution<br>
                                  <br>
-                                 - ASUS Fan Xpert<br>
                                  <br>
+                                 USB:<br>
                                  <br>
                                  <br>
-                                 ASUS EZ DIY:<br>
                                  <br>
-                                 - ASUS CrashFree BIOS 3<br>
+                                 Chipset:<br>
                                  <br>
-                                 - ASUS EZ Flash 3<br>
+                                 - 2x Portas USB 3.1 Gen 1 disponíveis através do conector USB interno<br>
                                  <br>
-                                 - ASUS UEFI BIOS EZ Mode<br>
+                                 - 8x Portas USB 2.0 / 1.1 (4 portas no painel traseiro, 4 portas disponíveis através
+                                 dos conectores USB internos)<br>
                                  <br>
-                                 - Multi-language BIOS<br>
                                  <br>
                                  <br>
+                                 CPU:<br>
                                  <br>
-                                 ASUS Q-Design:<br>
+                                 - 4x Portas USB 3.1 Gen 1 no painel traseiro<br>
                                  <br>
-                                 - ASUS Q-Slot<br>
                                  <br>
-                                 - ASUS Q-DIMM<br>
                                  <br>
+                                 Conectores Internos I/O:<br>
                                  <br>
+                                 - 1x Conector de alimentação principal ATX de 24 pinos<br>
                                  <br>
-                                 Sistema operacional suportado:<br>
+                                 - 1x Conector de alimentação ATX 12V de 8 pinos<br>
                                  <br>
-                                 - Windows 10 64bit<br>
+                                 - 1x Comunicação do ventilador da CPU<br>
                                  <br>
+                                 - 1x Comunicação do ventilador do sistema<br>
                                  <br>
+                                 - 1x Conector M.2 soquete 3<br>
                                  <br>
-                                 Portas no painel Traseiro:<br>
+                                 - 4x Conectores SATA de 6 Gb/s<br>
                                  <br>
-                                 - 1x PS/2 teclado (roxo)<br>
+                                 - 1x Comunicação do painel frontal<br>
                                  <br>
-                                 - 1x PS/2 mouse (verde)<br>
+                                 - 1x Comunicação de áudio do painel frontal<br>
                                  <br>
-                                 - 1x Saída(s) D-Sub<br>
+                                 - 1x Comunicação de saída S / PDIF<br>
                                  <br>
-                                 - 1x HDMI<br>
+                                 - 1x Comunicação de faixa de LED RGB<br>
                                  <br>
-                                 - 1x Porta(s) LAN (RJ45)<br>
+                                 - 1x Conector USB 3.1 Gen 1<br>
                                  <br>
-                                 - 2x Porta(s) USB 2.0<br>
+                                 - 2x Comunicações USB 2.0 / 1.1<br>
                                  <br>
-                                 - 3x USB 3.1 Gen 2<br>
+                                 - 1x Comunicação Trusted Platform Module (TPM) (2x10 pinos, apenas para o módulo
+                                 GC-TPM2.0)<br>
                                  <br>
-                                 - 4x USB 3.1 Gen 2 (azul)<br>
-                                 <br>
-                                 <br>
-                                 <br>
-                                 Painel Interno:<br>
-                                 <br>
-                                 - 1x Entrada USB 3.0, com suporte a 2 portas USB 3.0 adicionais(19-pin, moss green)<br>
-                                 <br>
-                                 - 2x Entrada(s) USB 2.0, com suporte a 4 portas USB 2.0 adicional(s)<br>
-                                 <br>
-                                 - 1x Conectores(s) para porta COM<br>
-                                 <br>
-                                 - 1x Conector(es) de ventoinha do processador (1x 4 -pin)<br>
-                                 <br>
-                                 - 4x Conectores SATA 6Gb/s<br>
-                                 <br>
-                                 - 1x Conector(es) de ventoinha do chassi (1x 4 -pin)<br>
-                                 <br>
-                                 - 1x M.2 Socket 3 with M key, type 2242/2260/2280 storage devices support (SATA & PCIE
-                                 3.0
-                                 x 4 mode)<br>
-                                 <br>
-                                 - 1x Leitor(es) externo(s) S/PDIF<br>
-                                 <br>
-                                 - 1x Conector(es) de força EATX de 24 pinos<br>
-                                 <br>
-                                 - 1x Conector(es) de áudio para o painel frontal (AAFP)<br>
-                                 <br>
-                                 - 1x Painel(s) do sistema<br>
+                                 - 1x Comunicação da porta serial<br>
                                  <br>
                                  - 1x Jumper Clear CMOS<br>
                                  <br>
-                                 - 1x Speaker connector<br>
+                                 <br>
+                                 <br>
+                                 Conectores do Painel Traseiro:<br>
+                                 <br>
+                                 - 1x Porta de teclado / mouse PS/2<br>
+                                 <br>
+                                 - 1x Porta DVI-D<br>
+                                 <br>
+                                 - 1x Porta HDMI<br>
+                                 <br>
+                                 - 4x Portas USB 3.1 Gen 1<br>
+                                 <br>
+                                 - 4x Portas USB 2.0 / 1.1<br>
+                                 <br>
+                                 - 1x Porta RJ-45<br>
+                                 <br>
+                                 - 3x Tomadas de áudio<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Controlador I / O:<br>
+                                 <br>
+                                 - Chip Controlador ITE I / O<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Monitoramento H / W:<br>
+                                 <br>
+                                 - Detecção de tensão<br>
+                                 <br>
+                                 - Detecção de temperatura<br>
+                                 <br>
+                                 - Detecção de velocidade do ventilador<br>
+                                 <br>
+                                 - Aviso de superaquecimento<br>
+                                 <br>
+                                 - Aviso de falha do ventilador<br>
+                                 <br>
+                                 - Controle de velocidade do ventilador<br>
+                                 <br>
+                                 *Se a função de controle de velocidade do ventilador é suportada dependerá do cooler
+                                 que você instalar.<br>
                                  <br>
                                  <br>
                                  <br>
                                  BIOS:<br>
                                  <br>
-                                 - 128 Mb Flash ROM, UEFI AMI BIOS, PnP,WfM2.0, SM BIOS 3.0, ACPI 6.1, Multi-language
-                                 BIOS,
-                                 ASUS EZ Flash 3, ASUS CrashFree BIOS 3, My Favorites, Last Modified log, F12
-                                 PrintScreen,
-                                 ASUS DRAM SPD (Serial Presence Detect) memory information, F6 Qfan Control<br>
+                                 - 1x 128 Mbit de flash<br>
+                                 <br>
+                                 - Uso do BIOS UEFI AMI licenciado<br>
+                                 <br>
+                                 - PnP 1.0a, DMI 2.7, WfM 2.0, SM BIOS 2.7, ACPI 5.0<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Recursos Especiais:<br>
+                                 <br>
+                                 - Suporte para o APP Center*<br>
+                                 <br>
+                                 - @BIOS<br>
+                                 <br>
+                                 - 3D OSD<br>
+                                 <br>
+                                 - AutoGreen<br>
+                                 <br>
+                                 - Configuração do BIOS<br>
+                                 <br>
+                                 - Cloud Station<br>
+                                 <br>
+                                 - Temperatura de Cor<br>
+                                 <br>
+                                 - EasyTune<br>
+                                 <br>
+                                 - Rápido Boot<br>
+                                 <br>
+                                 - Game Boost<br>
+                                 <br>
+                                 - ON / OFF Carregar<br>
+                                 <br>
+                                 - RGB Fusion<br>
+                                 <br>
+                                 - Smart Backup<br>
+                                 <br>
+                                 - Inteligente Teclado<br>
+                                 <br>
+                                 - Inteligente TimeLock<br>
+                                 <br>
+                                 - Sistema Visualizador de Informações<br>
+                                 <br>
+                                 - USB Blocker<br>
+                                 <br>
+                                 - V-Tuner<br>
+                                 <br>
+                                 - Suporte para Q-Flash<br>
+                                 <br>
+                                 - Suporte para instalação do Xpress<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 *Os aplicativos disponíveis no APP Center podem variar de acordo com o modelo da
+                                 placa-mãe. As funções suportadas de cada aplicativo também podem variar dependendo das
+                                 especificações da placa mãe.<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Software:<br>
+                                 <br>
+                                 - Norton Internet Security (versão OEM)<br>
+                                 <br>
+                                 - cFosSpeed<br>
                                  <br>
                                  <br>
                                  <br>
                                  Sistema Operacional:<br>
                                  <br>
-                                 - Windows 10 64-bit<br>
+                                 - Suporte para o Windows 10 de 64 bits<br>
+                                 <br>
+                                 - Suporte para o Windows 7 de 64 bits<br>
+                                 <br>
+                                 * Para suportar o Windows 7 de 64 bits, você deve instalar uma CPU AMD Ridge Ridge
+                                 Summit.<br>
+                                 <br>
+                                 * Baixe o "Windows USB Installation Tool" do site da GIGABYTE e instale-o antes de
+                                 instalar o Windows 7.<br>
                                  <br>
                                  <br>
                                  <br>
-                                 Físico:<br>
+                                 Fator de forma:<br>
                                  <br>
-                                 - Tipo: micro ATX<br>
+                                 - Formato: Micro ATX<br>
                                  <br>
-                                 - Dimensão: 22.6 x 22.1 cm<br>
+                                 - Dimensões: 24.4 x 21.5 cm<br>
                                  <br>
                                  <br>
                                  <br>
                                  Conteúdo da Embalagem:<br>
                                  <br>
-                                 - Placa Mãe ASUS<br>
+                                 - Placa Mãe Gigabyte<br>
                                  <br>
-                                 - Manual do usuário<br>
+                                 - Driver de Instalação<br>
                                  <br>
-                                 - I/O Shield<br>
-                                 <br>
-                                 - 2x Cabos SATA 6Gb/s<br>
-                                 <br>
-                                 - 1x M.2 Screw Package<br>
-                                 <br>
-                                 - 1x Driver de Instalação<br>
+                                 - Guia do Usuário<br>
                                  <br>
                                  <br>
                                  <br>
-                                 "Obs: BIOS atualizada, compatível com a série de Processadores AMD Ryzen 2000"<br>
+                                 NOTAS:<br>
                                  <br>
-                                 * Placa já com suporte para a série de Processadores AMD Ryzen 3000. Para mais
-                                 informações
-                                 acesse: "asus.com/br/Motherboards/PRIME-A320M-K-BR/HelpDesk_CPU/"<br>
+                                 <br>
+                                 <br>
+                                 1 - Devido às diferentes condições de suporte do Linux fornecidas pelos fornecedores de
+                                 chipsets, faça o download do driver Linux no site dos fornecedores de chipsets ou no
+                                 site de terceiros.<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 2 - A maioria dos fornecedores de hardware / software pode não oferecer mais drivers
+                                 para suportar o Win9X / ME / 2000 / XP. Se os drivers estiverem disponíveis nos
+                                 fornecedores, nós os atualizaremos no site da GIGABYTE.<br>
+                                 <br>
+                                 <br>
+                                 Garantia<br>
+                                 1 ano de garantia<br>
+                                 (9 meses de garantia contratual junto ao fabricante + 3 meses referentes à garantia
+                                 legal, nos termos do artigo 26, II, do Código de Defesa do Consumidor)<br>
+                                 <br>
+                                 <br>
+                                 Peso<br>
+                                 800 gramas (bruto com embalagem)
+                              </div>
+                              <div class="modal-footer">
+                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                 <!--<button type="button" class="btn btn-primary">Adicionar ao carrinho</button>-->
+                                 <button type="button" class="btn btn-primary" data-container="body"
+                                    data-toggle="popover" data-placement="top"
+                                    data-content="Item Adicionado ao carrinho!">
+                                    Adicionar ao carrinho
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm" style="padding: 20px;">
+               <div class="card" style="width: 18rem;">
+                  <img class="w-50 h-50" src="assets/images/placa-mae-asrock-a320m-hdv.jpg"
+                     alt="Processador Intel Core i5 9600k">
+                  <div class="card-body">
+                     <h5 class="card-title">Asrock-A320M-HDV-R4.0</h5>
+                     <p class="card-text">R$ 1200,00</p>
+                     <!-- Button trigger modal -->
+                     <button type="button" class="btn btn-primary center" data-toggle="modal"
+                        data-target="#asrock-a320m-hdv">
+                        Detalhes
+                     </button>
+
+                     <!-- Modal -->
+                     <div class="modal fade" id="asrock-a320m-hdv" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                           <div class="modal-content">
+                              <div class="modal-header">
+                                 <h5 class="modal-title" id="exampleModalLongTitle">Asrock A320M-HDV R4.0</h5>
+                                 <button type="button" class="Fechar" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                 </button>
+                              </div>
+                              <div class="modal-body center text-body">
+                                 Características:<br>
+                                 <br>
+                                 - Marca: ASRock<br>
+                                 <br>
+                                 - Modelo: A320M-HDV R4.0<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Especificações:<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Recursos ASRock:<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 ASRock Super Alloy:<br>
+                                 <br>
+                                 - PCB de tecido de vidro de alta densidade<br>
+                                 <br>
+                                 - PCB preto safira<br>
+                                 <br>
+                                 - ASRock Ultra M.2 (PCIe Gen3 x4 e SATA3)<br>
+                                 <br>
+                                 - ASRock Full Spike Protection (para todas as portas USB, Áudio, LAN)<br>
+                                 <br>
+                                 - ASRock Live Update & APP Shop<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 CPU:<br>
+                                 <br>
+                                 - Suporta APUs AMD Socket AM4 da série A (Bristol Ridge) e CPUs da série Ryzen
+                                 (Matisse, Picasso, Summit Ridge, Raven Ridge e Pinnacle Ridge)<br>
+                                 <br>
+                                 - Projeto em 6 fases de potência<br>
+                                 <br>
+                                 - Suporta CPU de até 105W<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Chipset:<br>
+                                 <br>
+                                 - AMD Promontory A320<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Memória:<br>
+                                 <br>
+                                 - Tecnologia de memória DDR4 de canal duplo<br>
+                                 <br>
+                                 - 2 slots DIMM DDR4<br>
+                                 <br>
+                                 - Os processadores AMD Ryzen series (Matisse) suportam memória DDR4
+                                 3200/2933/2667/2400/2133 ECC e não ECC, sem buffer *<br>
+                                 <br>
+                                 - CPUs AMD Ryzen series (Pinnacle Ridge ) suportam memória DDR4 3200+ (OC) / 2933 (OC)
+                                 / 2667/2400/2133 ECC e não ECC, sem buffer *<br>
+                                 <br>
+                                 - CPUs da série AMD Ryzen (Picasso) suportam DDR4 2933/2667/2400/2133 não ECC , memória
+                                 sem buffer *<br>
+                                 <br>
+                                 - CPUs da série AMD Ryzen (Summit Ridge) suportam DDR4 3200+ (OC) / 2933 (OC) /
+                                 2667/2400/2133 ECC e memória sem buffer do ECC e não ECC *<br>
+                                 <br>
+                                 - CPUs da série AMD Ryzen ( Raven Ridge) suportam memória DDR4 3200+ (OC) /
+                                 2933/2667/2400/2133 não ECC e sem buffer *<br>
+                                 <br>
+                                 - AMD 7 th As APUs da série A da série suportam memória DDR4 2400/2133 não ECC e sem
+                                 buffer *<br>
+                                 <br>
+                                 - Capacidade máx. capacidade da memória do sistema: 32GB **<br>
+                                 <br>
+                                 - 15μ Gold Contact nos slots DIMM<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 * Para CPUs da série Ryzen (Picasso e Raven Ridge), o ECC é suportado apenas com CPUs
+                                 PRO.<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 ** Devido à limitação do sistema operacional, o tamanho real da memória pode ser
+                                 inferior a 4 GB para a reserva do uso no sistema Windows de 32 bits . Para Windows de
+                                 64 bits com CPU de 64 bits, não existe essa limitação.<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 BIOS:<br>
+                                 <br>
+                                 - BIOS legal AMI UEFI de 128Mb com suporte a GUI<br>
+                                 <br>
+                                 - Suporta "Plug and Play"<br>
+                                 <br>
+                                 - Eventos de ativação de conformidade com ACPI 5.1<br>
+                                 <br>
+                                 - Suporta jumperfree<br>
+                                 <br>
+                                 - Suporte a SMBIOS 2.3<br>
+                                 <br>
+                                 - Multi-ajuste de tensão DRAM<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Gráficos:<br>
+                                 <br>
+                                 - Gráficos integrados da série AMD Radeon Vega na APU da série Ryzen *<br>
+                                 <br>
+                                 - Gráficos integrados da série R AMD Radeon na APU da série A *<br>
+                                 <br>
+                                 - DirectX 12, Pixel Shader 5.0<br>
+                                 <br>
+                                 - Memória compartilhada padrão de 2 GB. A memória compartilhada máxima suporta até 16
+                                 GB. **<br>
+                                 <br>
+                                 - Três opções de saída gráfica: D-Sub, DVI-D e HDMI<br>
+                                 <br>
+                                 - Suporta Monitor Triplo<br>
+                                 <br>
+                                 - Suporta HDMI com no máx. resolução de até 4K x 2K (4096x2160) a 24Hz / (3840x2160) a
+                                 30Hz<br>
+                                 <br>
+                                 - Suporta DVI-D com capacidade máx. resolução de até 1920x1200 a 60Hz<br>
+                                 <br>
+                                 - Suporta D-Sub com máx. resolução de até 2048x1536 a 60Hz<br>
+                                 <br>
+                                 - Suporta sincronização automática de lábios, cores profundas (12bpc), xvYCC e HBR
+                                 (áudio de alta taxa de bits) com porta HDMI (é necessário um monitor HDMI
+                                 compatível)<br>
+                                 <br>
+                                 - Suporta HDCP 1.4 com portas DVI-D e HDMI 1.4<br>
+                                 <br>
+                                 - Suporta reprodução de Blu-ray (BD) Full HD 1080p com portas DVI-D e HDMI<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 * O suporte real pode variar de acordo com a CPU<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 ** A memória compartilhada máxima de 16 GB requer 32 GB de memória do sistema
+                                 instalada.<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Áudio:<br>
+                                 <br>
+                                 - Áudio HD 7.1 CH (Codec de áudio Realtek ALC887)<br>
+                                 <br>
+                                 - Suporta proteção contra surtos<br>
+                                 <br>
+                                 - ELNA Audio Caps<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 LAN:<br>
+                                 <br>
+                                 - LAN Gigabit PCIE x1 10/100/1000 Mb/s<br>
+                                 <br>
+                                 - Realtek RTL8111H<br>
+                                 <br>
+                                 - Suporta Wake-On-LAN<br>
+                                 <br>
+                                 - Suporta proteção contra relâmpagos / ESD<br>
+                                 <br>
+                                 - Suporta Ethernet 802.3az com eficiência energética<br>
+                                 <br>
+                                 - Suporta PXE<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Slots:<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 CPUs AMD série Ryzen (Matisse, Summit Ridge e Pinnacle de Ridge):<br>
+                                 <br>
+                                 - 1x PCI Express 3.0 X16 (PCIE2: modo x16) *<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 AMD 7 th A-Series APU:<br>
+                                 <br>
+                                 - 1x PCI Express 3.0 X16 (PCIE2: modo x8) *<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 CPUs da série AMD Ryzen (Picasso, Raven Ridge):<br>
+                                 <br>
+                                 - 1x slot PCI Express 3.0 x16 (modo PCIE2: x8) *<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 CPUs da série AMD Athlon:<br>
+                                 <br>
+                                 - 1x Slot PCI Express 3.0 x16 (modo PCIE2: x4) *<br>
+                                 <br>
+                                 - 1x PCI Express 2.0 x1 Slot<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 * Suporta SSD NVMe como discos de inicialização<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Armazenamento:<br>
+                                 <br>
+                                 - 4x Conectores SATA3 de 6,0 Gb/s, suportam RAID (RAID 0, RAID 1 e RAID 10), NCQ, AHCI
+                                 e Hot Plug<br>
+                                 <br>
+                                 - 1x Soquete Ultra M.2, suporta o tipo de chave M 2242/2260/2280 M.2 Módulo SATA3 6.0
+                                 Gb / se módulo M.2 PCI Express até Gen3 x4 (32 Gb / s) (com Matisse, Picasso, Summit
+                                 Ridge, Raven Ridge e Pinnacle Ridge) ou Gen3 x2 (16 Gb / s) (com A APU série-APU e
+                                 Athlon série 2xxGE) *<br>
+                                 <br>
+                                 - Suporta Kit ASRock U.2<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 * Suporta SSD NVMe como discos de inicialização.<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Conector:<br>
+                                 <br>
+                                 - 1x Header de porta COM<br>
+                                 <br>
+                                 - 1x Header TPM<br>
+                                 <br>
+                                 - 1x Header de intrusão e alto-falante do chassi<br>
+                                 <br>
+                                 - 1x Conector de ventilador da CPU (4 pinos) *<br>
+                                 <br>
+                                 - 2x Conectores de ventilador do chassi (1 x 4 pinos, 1 x 3 pinos) **<br>
+                                 <br>
+                                 - 1x Conector de alimentação ATX de 24 pinos<br>
+                                 <br>
+                                 - 1x Conector de alimentação de 12V e 12V<br>
+                                 <br>
+                                 - 1x Conector de áudio no painel frontal<br>
+                                 <br>
+                                 - 2x Conectores USB 2.0 (suporta 4 portas USB 2.0) (suporta proteção ESD)<br>
+                                 <br>
+                                 - 1x Header USB 3.1 Gen1 (Suporta 2 portas USB 3.1 Gen1) (Suporta Proteção ESD)<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 * O conector da ventoinha da CPU suporta a ventoinha da CPU com potência máxima de 1A
+                                 (12W).<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 ** O conector do ventilador do chassi suporta o ventilador do chassi com potência
+                                 máxima de 1A (12W).<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Painel Traseiro:<br>
+                                 <br>
+                                 - 1x Porta PS/2 de mouse / teclado<br>
+                                 <br>
+                                 - 1x Porta D-Sub<br>
+                                 <br>
+                                 - 1x Porta DVI-D<br>
+                                 <br>
+                                 - 1x Porta HDMI<br>
+                                 <br>
+                                 - 2x Portas USB 2.0 (suporta proteção contra ESD)<br>
+                                 <br>
+                                 - 4x Portas USB 3.1 Gen1 (suporta ESD Proteção)<br>
+                                 <br>
+                                 - 1x Porta LAN RJ-45 com LED (LED ACT / LINK e LED SPEED)<br>
+                                 <br>
+                                 - Conectores de áudio HD: Entrada de linha / Alto-falante frontal / Microfone<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Software e UEFI:<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Software:<br>
+                                 <br>
+                                 - Utilitário da placa-mãe ASRock (A-Tuning)<br>
+                                 <br>
+                                 - Carregador de aplicativos ASRock<br>
+                                 <br>
+                                 - ASRock XFast LAN<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 UEFI:<br>
+                                 <br>
+                                 - ASRock Full HD UEFI<br>
+                                 <br>
+                                 - ASRock HD instantâneo - ASRock Instant Flash<br>
+                                 <br>
+                                 - ASRock Easy RAID Installer<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 * Esses utilitários podem ser baixados na ASRock Live Update & APP Shop.<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Monitor de Hardware:<br>
+                                 <br>
+                                 - Sensor de temperatura da CPU / chassi<br>
+                                 <br>
+                                 - Tacômetro da ventoinha da CPU / chassi<br>
+                                 <br>
+                                 - Ventilador silencioso da CPU / chassi<br>
+                                 <br>
+                                 - Controle de várias velocidades da CPU / ventilador do chassi<br>
+                                 <br>
+                                 - Detecção CASE OPEN<br>
+                                 <br>
+                                 - Monitoramento de tensão: + 12V, + 5V, + 3.3V, Vcore<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Fator de Forma:<br>
+                                 <br>
+                                 - Formato: Micro ATX<br>
+                                 <br>
+                                 - Dimensões: 23 x 20.1 cm<br>
+                                 <br>
+                                 - Design de capacitor sólido<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 OS:<br>
+                                 <br>
+                                 - Microsoft Windows 10 de 64 bits<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Certificações:<br>
+                                 <br>
+                                 - FCC, CE<br>
+                                 <br>
+                                 - Pronto para ErP / EuP (é necessária uma fonte de alimentação pronta para ErP /
+                                 EuP)<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Conteúdo da Embalagem:<br>
+                                 <br>
+                                 - 1x Placa Mãe ASRock<br>
+                                 <br>
+                                 - 1x Guia de instalação rápida<br>
+                                 <br>
+                                 - 1x CD de suporte<br>
+                                 <br>
+                                 - 1x Blindagem I/O<br>
+                                 <br>
+                                 - 2x Cabos de dados SATA<br>
+                                 <br>
+                                 - 1x Parafuso para soquete M.2<br>
+                                 <br>
+                                 <br>
+                                 Garantia<br>
+                                 1 ano de garantia<br>
+                                 (9 meses de garantia contratual junto ao fabricante + 3 meses referentes à garantia
+                                 legal, nos termos do artigo 26, II, do Código de Defesa do Consumidor)<br>
+                                 <br>
+                                 <br>
+                                 Peso<br>
+                                 755 gramas (bruto com embalagem)
+                              </div>
+                              <div class="modal-footer">
+                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                 <!--<button type="button" class="btn btn-primary">Adicionar ao carrinho</button>-->
+                                 <button type="button" class="btn btn-primary" data-container="body"
+                                    data-toggle="popover" data-placement="top"
+                                    data-content="Item Adicionado ao carrinho!">
+                                    Adicionar ao carrinho
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm" style="padding: 20px;">
+               <div class="card" style="width: 18rem;">
+                  <img class="w-50 h-50" src="assets/images/placa-mae-gigabyte-h410m-h.jpg"
+                     alt="Placa mãe Gigabyte H410M-H">
+                  <div class="card-body">
+                     <h5 class="card-title">Placa mãe Gigabyte H410M-H</h5>
+                     <p class="card-text">R$ 1900,00</p>
+                     <!-- Button trigger modal -->
+                     <button type="button" class="btn btn-primary center" data-toggle="modal"
+                        data-target="#placa-mae-gigabyte-h410m-h">
+                        Detalhes
+                     </button>
+
+                     <!-- Modal -->
+                     <div class="modal fade" id="placa-mae-gigabyte-h410m-h" tabindex=" -1" role="dialog"
+                        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                           <div class="modal-content">
+                              <div class="modal-header">
+                                 <h5 class="modal-title" id="exampleModalLongTitle">Ryzen 7 3700X</h5>
+                                 <button type="button" class="Fechar" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                 </button>
+                              </div>
+                              <div class="modal-body">
+                                 Características:<br>
+                                 <br>
+                                 - Marca: Gigabyte<br>
+                                 <br>
+                                 - Modelo: H410M H<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Especificações:<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 CPU:<br>
+                                 <br>
+                                 - Suporte para 10 de Geração Intel ® Núcleo ™ i9 processadores / Intel ® Core ™ i7
+                                 processadores / Intel ® Core ™ i5 processadores / Intel ® Core ™ i3 processadores /
+                                 Intel
+                                 ® Pentium ® processadores / Intel ® Celeron ® processadores no pacote LGA1200<br>
+                                 <br>
+                                 - O cache L3 varia com a CPU<br>
+                                 <br>
+                                 * Consulte "Lista de suporte da CPU" para obter mais informações.<br>
+                                 <br>
+                                 TDP: 1‎25W<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Chipset:<br>
+                                 <br>
+                                 - Chipset Intel ® H410 Express<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Memória:<br>
+                                 <br>
+                                 - Processadores Intel ® Core ™ i9 / i7: Suporte para módulos de memória DDR4
+                                 2933/2666/2400/2133 MHz<br>
+                                 <br>
+                                 - Intel ® Core ™ i5 / i3 / Pentium ® / Celeron ® processadores: Suporte para DDR4
+                                 2666/2400/2133 módulos de memória MHz<br>
+                                 <br>
+                                 - 2x soquetes DDR4 DIMM que suportam até 64 GB (capacidade DIMM única de 32 GB) de
+                                 memória
+                                 do sistema<br>
+                                 <br>
+                                 - Arquitetura de memória de canal duplo<br>
+                                 <br>
+                                 - Suporte para módulos de memória ECC sem buffer DIMM 1Rx8 / 2Rx8 (operam no modo não
+                                 ECC)<br>
+                                 <br>
+                                 - Suporte para módulos de memória DIMM 1Rx8 / 2Rx8 / 1Rx16 sem buffer ECC<br>
+                                 <br>
+                                 - Suporte para módulos de memória Extreme Memory Profile (XMP)<br>
+                                 <br>
+                                 * Consulte "Lista de suporte de memória" para obter mais informações.<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Gráficos integrados:<br>
+                                 <br>
+                                 Processador gráfico integrado - Suporte para gráficos HD Intel®:<br>
+                                 <br>
+                                 - 1 porta D-Sub, suportando uma resolução máxima de 1920x1200 a 60 Hz<br>
+                                 <br>
+                                 - 1 x portas HDMI, suportando uma resolução máxima de 4096x2160 @ 30 Hz<br>
+                                 <br>
+                                 * Suporte para a versão HDMI 1.4 e HDCP 2.3.<br>
+                                 <br>
+                                 - Memória compartilhada máxima de 512 MB<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Áudio:<br>
+                                 <br>
+                                 - Codec Realtek ® ALC887<br>
+                                 <br>
+                                 - Áudio de alta definição<br>
+                                 <br>
+                                 - 2/4 / 5.1 / 7.1 canais<br>
+                                 <br>
+                                 * Para configurar o áudio de 7.1 canais, abra o software de áudio e selecione
+                                 Configurações avançadas do dispositivo> Dispositivo de reprodução para alterar primeiro
+                                 a
+                                 configuração padrão. Por favor, visite o site da GIGABYTE para obter detalhes sobre a
+                                 configuração do software de áudio.<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 LAN:<br>
+                                 <br>
+                                 - Chip LAN Realtek ® GbE (1000 Mbit / 100 Mbit)<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Slots de expansão:<br>
+                                 <br>
+                                 - 1 slot PCI Express x16, executando x16<br>
+                                 <br>
+                                 - 2 x slots PCI Express x1 (os slots PCI Express estão em conformidade com o padrão PCI
+                                 Express 3.0.)<br>
+                                 <br>
+                                 * Suporta até protocolos de gerenciamento de energia ASPM L1.2.<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Interface de armazenamento:<br>
+                                 <br>
+                                 - 1 x conector M.2 (soquete 3, chave M, tipo 2242/2260/2280 SATA e suporte a SSD PCIe
+                                 x2)<br>
+                                 <br>
+                                 - 4 x conectores SATA de 6 Gb / s<br>
+                                 <br>
+                                 * Consulte "1-7 Conectores internos" para obter os avisos de instalação dos conectores
+                                 M.2
+                                 e SATA.<br>
+                                 <br>
+                                 * Os conectores M.2 suportam até protocolos de gerenciamento de energia ASPM L1.2
+                                 PCIe.<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 USB:<br>
+                                 <br>
+                                 Chipset:<br>
+                                 <br>
+                                 - 4 portas USB 3.2 Gen 1 (2 portas no painel traseiro, 2 portas disponíveis no conector
+                                 USB interno)<br>
+                                 <br>
+                                 - 6 x portas USB 2.0 / 1.1 (4 portas no painel traseiro, 2 portas disponíveis através
+                                 do
+                                 conector USB interno)<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Conectores de E / S internos:<br>
+                                 <br>
+                                 - 1 x conector de alimentação principal ATX de 24 pinos<br>
+                                 <br>
+                                 - 1 x conector de alimentação ATX 12V de 8 pinos<br>
+                                 <br>
+                                 - 1 x header de cooler da CPU<br>
+                                 <br>
+                                 - 1 x header de cooler do sistema<br>
+                                 <br>
+                                 - 1 x header de tira LED RGB<br>
+                                 <br>
+                                 - 4 x conectores SATA de 6 Gb / s<br>
+                                 <br>
+                                 - 1 x conector M.2 Socket 3<br>
+                                 <br>
+                                 - 1 x header do painel frontal<br>
+                                 <br>
+                                 - 1 x conector de áudio no painel frontal<br>
+                                 <br>
+                                 - 1 x conector USB 3.2 Gen 1<br>
+                                 <br>
+                                 - 1 x conector USB 2.0 / 1.1<br>
+                                 <br>
+                                 - 1 x header Trusted Platform Module (somente para o módulo GC-TPM2.0 SPI / GC-TPM2.0
+                                 SPI
+                                 2.0)<br>
+                                 <br>
+                                 - 1 x header de porta serial<br>
+                                 <br>
+                                 - 1 x jumper clear CMOS<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Conectores do painel traseiro:<br>
+                                 <br>
+                                 - 1 porta de teclado / mouse PS / 2<br>
+                                 <br>
+                                 - 1 x porta D-Sub<br>
+                                 <br>
+                                 - 1 x porta HDMI<br>
+                                 <br>
+                                 - 2 x portas USB 3.2 Gen 1<br>
+                                 <br>
+                                 - 4 x portas USB 2.0 / 1.1<br>
+                                 <br>
+                                 - 1 x porta RJ-45<br>
+                                 <br>
+                                 - 3 x tomadas de áudio<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Controlador de E / S:<br>
+                                 <br>
+                                 - Chip Controlador de E / S iTE ®<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Monitoramento H / W:<br>
+                                 <br>
+                                 - Detecção de tensão<br>
+                                 <br>
+                                 - Detecção de temperatura<br>
+                                 <br>
+                                 - Detecção de velocidade do cooler<br>
+                                 <br>
+                                 - Aviso de superaquecimento<br>
+                                 <br>
+                                 - Aviso de falha do cooler<br>
+                                 <br>
+                                 - Controle de velocidade do cooler<br>
+                                 <br>
+                                 * Se a função de controle de velocidade do ventilador é suportada, depende do cooler
+                                 instalado.<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 BIOS:<br>
+                                 <br>
+                                 - 1 x flash de 128 Mbit<br>
+                                 <br>
+                                 - Uso do BIOS AMI UEFI licenciado<br>
+                                 <br>
+                                 - PnP 1.0a, DMI 2.7, WfM 2.0, SM BIOS 2.7, ACPI 5.0<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Características únicas:<br>
+                                 <br>
+                                 - Suporte para o APP Center<br>
+                                 <br>
+                                 * Os aplicativos disponíveis no APP Center podem variar de acordo com o modelo da
+                                 placa-mãe. As funções suportadas de cada aplicativo também podem variar, dependendo das
+                                 especificações da placa-mãe.<br>
+                                 <br>
+                                 - @BIOS<br>
+                                 <br>
+                                 - Ambient LED<br>
+                                 <br>
+                                 - EasyTune<br>
+                                 <br>
+                                 - Fast Boot<br>
+                                 <br>
+                                 - Game Boost<br>
+                                 <br>
+                                 - ON/OFF Charge<br>
+                                 <br>
+                                 - Smart Backup<br>
+                                 <br>
+                                 - System Information Viewer<br>
+                                 <br>
+                                 - Suporte para Q-Flash<br>
+                                 <br>
+                                 - Suporte para instalação do Xpress<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Fator de forma:<br>
+                                 <br>
+                                 - Fator de forma Micro ATX; 22.6cm x 17.4cm<br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 Conteúdo embalagem:<br>
+                                 <br>
+                                 - 1x Placa Mãe Gigabyte H410M H<br>
+                                 <br>
+                                 - 1x Manual do Usuário<br>
                                  <br>
                                  <br>
                                  Garantia<br>
@@ -1486,7 +1410,7 @@
                                  <br>
                                  <br>
                                  Peso<br>
-                                 810 gramas (bruto com embalagem)
+                                 665 gramas (bruto com embalagem)
                               </div>
                               <div class="modal-footer">
                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
@@ -1503,83 +1427,422 @@
                   </div>
                </div>
             </div>
-            <div class="col-sm" style="padding: 20px;">
-               <div class="card" style="width: 18rem;">
-                  <img class="w-50 h-50" src="assets/images/placa-mae-asrock-b365m.jpg"
-                     alt="Placa mãe Asrock B365M Phantom Gaming">
-                  <div class="card-body">
-                     <h5 class="card-title">Placa mãe Asrock B365M Phantom Gaming</h5>
-                     <p class="card-text">R$ 500,00</p>
-                     <!-- Button trigger modal -->
-                     <button type="button" class="btn btn-primary center" data-toggle="modal"
-                        data-target="#asrock-b365m">
-                        Detalhes
-                     </button>
 
-                     <!-- Modal -->
-                     <div class="modal fade" id="asrock-b365m" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                           <div class="modal-content">
-                              <div class="modal-header">
-                                 <h5 class="modal-title" id="exampleModalLongTitle">Asrock B365M Phantom Gaming</h5>
-                                 <button type="button" class="Fechar" data-dismiss="modal" aria-label="Fechar">
-                                    <span aria-hidden="true">&times;</span>
-                                 </button>
-                              </div>
-                              <div class="modal-body">
-                                 ...
-                              </div>
-                              <div class="modal-footer">
-                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                                 <!--<button type="button" class="btn btn-primary">Adicionar ao carrinho</button>-->
-                                 <button type="button" class="btn btn-primary" data-container="body"
-                                    data-toggle="popover" data-placement="top"
-                                    data-content="Item Adicionado ao carrinho!">
-                                    Adicionar ao carrinho
-                                 </button>
+
+            <div class="row" style="padding: 20px;">
+               <div class="col-sm" style="padding: 20px;">
+                  <div class="card" style="width: 18rem;">
+                     <img class="w-50 h-50" src="assets/images/a320m-k-br.jpg" alt="Placa mãe Asus A320M-K-BR">
+                     <div class="card-body">
+                        <h5 class="card-title">Placa mãe Asus A320M-K-BR</h5>
+                        <p class="card-text">R$ 500,00</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary center" data-toggle="modal"
+                           data-target="#A320M-K-BR">
+                           Detalhes
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="A320M-K-BR" tabindex="-1" role="dialog"
+                           aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                           <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Asus A320M-K-BR</h5>
+                                    <button type="button" class="Fechar" data-dismiss="modal" aria-label="Fechar">
+                                       <span aria-hidden="true">&times;</span>
+                                    </button>
+                                 </div>
+                                 <div class="modal-body">
+                                    Características:<br>
+                                    <br>
+                                    - Marca: ASUS<br>
+                                    <br>
+                                    - Modelo: A320M-K/BR<br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    Especificações:<br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    Processador(es):<br>
+                                    <br>
+                                    - AMD AM4 Socket for AMD Ryzen/7th Generation A-series/Athlon Processadores<br>
+                                    <br>
+                                    - Suporta CPU em até 8 cores<br>
+                                    <br>
+                                    - TDP: 105W<br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    Chipset:<br>
+                                    <br>
+                                    - AMD A320<br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    Memória:<br>
+                                    <br>
+                                    - 2x DIMM, máximo de 32GB, DDR4 3200(O.C.)/2933(O.C.)/2666/2400/2133 MHz ECC and
+                                    non-ECC,
+                                    Un-buffered<br>
+                                    <br>
+                                    - AMD Ryzen Processors<br>
+                                    <br>
+                                    - Arquitetura de memória: Dois canais<br>
+                                    <br>
+                                    * Suporte Hyper DIMM depende das características físicas de cada CPU.<br>
+                                    <br>
+                                    - AMD 7th Generation A-series/Athlon Processors<br>
+                                    <br>
+                                    - 2x DIMM, Max. 32GB, DDR4 2400/2133 MHz Non-ECC, Un-buffered Memory<br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    Gráfico:<br>
+                                    <br>
+                                    - Integrated AMD Radeon R Series Graphics in the 7th Generation A-Series APU *1<br>
+                                    <br>
+                                    - Saída Multi-VGA: portas HDMI/RGB<br>
+                                    <br>
+                                    - Suporta RGB com resolução máxima de 1920 por 1200 / 60 Hz<br>
+                                    <br>
+                                    - Supports HDMI 1.4b with max. resolution 4096 x 2160 @ 24 Hz / 2560 x 1600 @ 60
+                                    Hz<br>
+                                    <br>
+                                    - Máximo de memória compartilhada 2048 MB<br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    Slots de expansão:<br>
+                                    <br>
+                                    - AMD Ryzen Processors: 1 x PCIe 3.0/2.0 (x16)<br>
+                                    <br>
+                                    - AMD 7th Generation A-series/Athlon Processors: 1 x PCIe 3.0/2.0 (x8 mode)<br>
+                                    <br>
+                                    - AMD A320 chipset: 2 x PCIe 2.0 x1<br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    Armazenamento:<br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    AMD A320 chipset:<br>
+                                    <br>
+                                    - 4x Porta(s) SATA 6Gb/s, cinza(s)<br>
+                                    <br>
+                                    - Suporta Raid 0, 1, 10<br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    AMD Ryzen Processors:<br>
+                                    <br>
+                                    - 1x M.2 Socket 3<br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    AMD Ryzen/7th Generation A-series/Athlon Processors:<br>
+                                    <br>
+                                    - 1x M.2 Socket 3<br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    LAN:<br>
+                                    <br>
+                                    - 1x Gigabit LAN Realtek RTL8111H<br>
+                                    <br>
+                                    - 1x Gigabit LAN<br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    Áudio:<br>
+                                    <br>
+                                    - Realtek ALC887 com 8 canais - CODEC de alta definição<br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    Portas USB:<br>
+                                    <br>
+                                    - AMD Ryzen/7th Generation A-series/Athlon Processors: 4 porta(s) USB 3.0 (4 no
+                                    painel
+                                    traseiro, azul)<br>
+                                    <br>
+                                    - AMD A320 chipset: 2 porta(s) USB 3.0 (conectores internos para mais 2 porta(s)<br>
+                                    <br>
+                                    - AMD A320 chipset: 6 porta(s) USB 2.0 (2 no painel traseiro, , conectores internos
+                                    para
+                                    mais 4 porta(s)<br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    Recursos especiais:<br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    ASUS 5X Protection III:<br>
+                                    <br>
+                                    - ASUS SafeSlot Core: Fortified PCIe Slot prevents damage<br>
+                                    <br>
+                                    - ASUS LANGuard: Protects against LAN surges, lightning strikes and
+                                    static-electricity
+                                    discharges!<br>
+                                    <br>
+                                    - ASUS Overvoltage Protection: World-class circuit-protecting power design<br>
+                                    <br>
+                                    - ASUS Stainless-Steel Back I/O: 3X corrosion-resistance for greater durability!<br>
+                                    <br>
+                                    - ASUS DIGI+ VRM: 6 Phase digital power design<br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    Recursos exclusivos ASUS:<br>
+                                    <br>
+                                    - AI Suite 3<br>
+                                    <br>
+                                    - Ai Charger<br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    Solução térmica silenciosa ASUS:<br>
+                                    <br>
+                                    - Stylish Fanless Design Heat-sink solution<br>
+                                    <br>
+                                    - ASUS Fan Xpert<br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    ASUS EZ DIY:<br>
+                                    <br>
+                                    - ASUS CrashFree BIOS 3<br>
+                                    <br>
+                                    - ASUS EZ Flash 3<br>
+                                    <br>
+                                    - ASUS UEFI BIOS EZ Mode<br>
+                                    <br>
+                                    - Multi-language BIOS<br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    ASUS Q-Design:<br>
+                                    <br>
+                                    - ASUS Q-Slot<br>
+                                    <br>
+                                    - ASUS Q-DIMM<br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    Sistema operacional suportado:<br>
+                                    <br>
+                                    - Windows 10 64bit<br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    Portas no painel Traseiro:<br>
+                                    <br>
+                                    - 1x PS/2 teclado (roxo)<br>
+                                    <br>
+                                    - 1x PS/2 mouse (verde)<br>
+                                    <br>
+                                    - 1x Saída(s) D-Sub<br>
+                                    <br>
+                                    - 1x HDMI<br>
+                                    <br>
+                                    - 1x Porta(s) LAN (RJ45)<br>
+                                    <br>
+                                    - 2x Porta(s) USB 2.0<br>
+                                    <br>
+                                    - 3x USB 3.1 Gen 2<br>
+                                    <br>
+                                    - 4x USB 3.1 Gen 2 (azul)<br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    Painel Interno:<br>
+                                    <br>
+                                    - 1x Entrada USB 3.0, com suporte a 2 portas USB 3.0 adicionais(19-pin, moss
+                                    green)<br>
+                                    <br>
+                                    - 2x Entrada(s) USB 2.0, com suporte a 4 portas USB 2.0 adicional(s)<br>
+                                    <br>
+                                    - 1x Conectores(s) para porta COM<br>
+                                    <br>
+                                    - 1x Conector(es) de ventoinha do processador (1x 4 -pin)<br>
+                                    <br>
+                                    - 4x Conectores SATA 6Gb/s<br>
+                                    <br>
+                                    - 1x Conector(es) de ventoinha do chassi (1x 4 -pin)<br>
+                                    <br>
+                                    - 1x M.2 Socket 3 with M key, type 2242/2260/2280 storage devices support (SATA &
+                                    PCIE
+                                    3.0
+                                    x 4 mode)<br>
+                                    <br>
+                                    - 1x Leitor(es) externo(s) S/PDIF<br>
+                                    <br>
+                                    - 1x Conector(es) de força EATX de 24 pinos<br>
+                                    <br>
+                                    - 1x Conector(es) de áudio para o painel frontal (AAFP)<br>
+                                    <br>
+                                    - 1x Painel(s) do sistema<br>
+                                    <br>
+                                    - 1x Jumper Clear CMOS<br>
+                                    <br>
+                                    - 1x Speaker connector<br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    BIOS:<br>
+                                    <br>
+                                    - 128 Mb Flash ROM, UEFI AMI BIOS, PnP,WfM2.0, SM BIOS 3.0, ACPI 6.1, Multi-language
+                                    BIOS,
+                                    ASUS EZ Flash 3, ASUS CrashFree BIOS 3, My Favorites, Last Modified log, F12
+                                    PrintScreen,
+                                    ASUS DRAM SPD (Serial Presence Detect) memory information, F6 Qfan Control<br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    Sistema Operacional:<br>
+                                    <br>
+                                    - Windows 10 64-bit<br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    Físico:<br>
+                                    <br>
+                                    - Tipo: micro ATX<br>
+                                    <br>
+                                    - Dimensão: 22.6 x 22.1 cm<br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    Conteúdo da Embalagem:<br>
+                                    <br>
+                                    - Placa Mãe ASUS<br>
+                                    <br>
+                                    - Manual do usuário<br>
+                                    <br>
+                                    - I/O Shield<br>
+                                    <br>
+                                    - 2x Cabos SATA 6Gb/s<br>
+                                    <br>
+                                    - 1x M.2 Screw Package<br>
+                                    <br>
+                                    - 1x Driver de Instalação<br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    "Obs: BIOS atualizada, compatível com a série de Processadores AMD Ryzen 2000"<br>
+                                    <br>
+                                    * Placa já com suporte para a série de Processadores AMD Ryzen 3000. Para mais
+                                    informações
+                                    acesse: "asus.com/br/Motherboards/PRIME-A320M-K-BR/HelpDesk_CPU/"<br>
+                                    <br>
+                                    <br>
+                                    Garantia<br>
+                                    1 ano de garantia<br>
+                                    (9 meses de garantia contratual junto ao fabricante + 3 meses referentes à garantia
+                                    legal,
+                                    nos termos do artigo 26, II, do Código de Defesa do Consumidor)<br>
+                                    <br>
+                                    <br>
+                                    Peso<br>
+                                    810 gramas (bruto com embalagem)
+                                 </div>
+                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                    <!--<button type="button" class="btn btn-primary">Adicionar ao carrinho</button>-->
+                                    <button type="button" class="btn btn-primary" data-container="body"
+                                       data-toggle="popover" data-placement="top"
+                                       data-content="Item Adicionado ao carrinho!">
+                                       Adicionar ao carrinho
+                                    </button>
+                                 </div>
                               </div>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
-            </div>
-            <div class="col-sm" style="padding: 20px;">
-               <div class="card" style="width: 18rem;">
-                  <img class="w-50 h-50" src="assets/images/placa-mae-asrock-b365m.jpg"
-                     alt="Placa mãe Asrock B365M Phantom Gaming">
-                  <div class="card-body">
-                     <h5 class="card-title">Placa mãe Asrock B365M Phantom Gaming</h5>
-                     <p class="card-text">R$ 500,00</p>
-                     <!-- Button trigger modal -->
-                     <button type="button" class="btn btn-primary center" data-toggle="modal"
-                        data-target="#asrock-b365m">
-                        Detalhes
-                     </button>
+               <div class="col-sm" style="padding: 20px;">
+                  <div class="card" style="width: 18rem;">
+                     <img class="w-50 h-50" src="assets/images/placa-mae-asrock-b365m.jpg"
+                        alt="Placa mãe Asrock B365M Phantom Gaming">
+                     <div class="card-body">
+                        <h5 class="card-title">Placa mãe Asrock B365M Phantom Gaming</h5>
+                        <p class="card-text">R$ 500,00</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary center" data-toggle="modal"
+                           data-target="#asrock-b365m">
+                           Detalhes
+                        </button>
 
-                     <!-- Modal -->
-                     <div class="modal fade" id="asrock-b365m" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                           <div class="modal-content">
-                              <div class="modal-header">
-                                 <h5 class="modal-title" id="exampleModalLongTitle">Asrock B365M Phantom Gaming</h5>
-                                 <button type="button" class="Fechar" data-dismiss="modal" aria-label="Fechar">
-                                    <span aria-hidden="true">&times;</span>
-                                 </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="asrock-b365m" tabindex="-1" role="dialog"
+                           aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                           <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Asrock B365M Phantom Gaming</h5>
+                                    <button type="button" class="Fechar" data-dismiss="modal" aria-label="Fechar">
+                                       <span aria-hidden="true">&times;</span>
+                                    </button>
+                                 </div>
+                                 <div class="modal-body">
+                                    ...
+                                 </div>
+                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                    <!--<button type="button" class="btn btn-primary">Adicionar ao carrinho</button>-->
+                                    <button type="button" class="btn btn-primary" data-container="body"
+                                       data-toggle="popover" data-placement="top"
+                                       data-content="Item Adicionado ao carrinho!">
+                                       Adicionar ao carrinho
+                                    </button>
+                                 </div>
                               </div>
-                              <div class="modal-body">
-                                 ...
-                              </div>
-                              <div class="modal-footer">
-                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                                 <!--<button type="button" class="btn btn-primary">Adicionar ao carrinho</button>-->
-                                 <button type="button" class="btn btn-primary" data-container="body"
-                                    data-toggle="popover" data-placement="top"
-                                    data-content="Item Adicionado ao carrinho!">
-                                    Adicionar ao carrinho
-                                 </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm" style="padding: 20px;">
+                  <div class="card" style="width: 18rem;">
+                     <img class="w-50 h-50" src="assets/images/placa-mae-asrock-b365m.jpg"
+                        alt="Placa mãe Asrock B365M Phantom Gaming">
+                     <div class="card-body">
+                        <h5 class="card-title">Placa mãe Asrock B365M Phantom Gaming</h5>
+                        <p class="card-text">R$ 500,00</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary center" data-toggle="modal"
+                           data-target="#asrock-b365m">
+                           Detalhes
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="asrock-b365m" tabindex="-1" role="dialog"
+                           aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                           <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Asrock B365M Phantom Gaming</h5>
+                                    <button type="button" class="Fechar" data-dismiss="modal" aria-label="Fechar">
+                                       <span aria-hidden="true">&times;</span>
+                                    </button>
+                                 </div>
+                                 <div class="modal-body">
+                                    ...
+                                 </div>
+                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                    <!--<button type="button" class="btn btn-primary">Adicionar ao carrinho</button>-->
+                                    <button type="button" class="btn btn-primary" data-container="body"
+                                       data-toggle="popover" data-placement="top"
+                                       data-content="Item Adicionado ao carrinho!">
+                                       Adicionar ao carrinho
+                                    </button>
+                                 </div>
                               </div>
                            </div>
                         </div>
@@ -1589,18 +1852,17 @@
             </div>
          </div>
       </div>
-   </div>
-   <div class="sidenav" style="padding-top: 190px;">
-      <p>Filtros de busca</p>
-      <a href="#">Marca:</a>
-      <a href="#">Ordenar por:</a>
-      <a href="#">Soquete:</a>
-      <a href="#">Formato:</a>
-   </div>
-   <script src="assets/js/jquery-3.3.1.js"></script>
-   <script src="assets/js/popper.js"></script>
-   <script src="assets/js/bootstrap.js"></script>
-   <script src="assets/js/script.js"></script>
+      <div class="sidenav" style="padding-top: 190px;">
+         <p>Filtros de busca</p>
+         <a href="#">Marca:</a>
+         <a href="#">Ordenar por:</a>
+         <a href="#">Soquete:</a>
+         <a href="#">Formato:</a>
+      </div>
+      <script src="assets/js/jquery-3.3.1.js"></script>
+      <script src="assets/js/popper.js"></script>
+      <script src="assets/js/bootstrap.js"></script>
+      <script src="assets/js/script.js"></script>
 </body>
 <div style="bottom: 0px; padding-left: 50%;">
    <ul class="pagination justify-content-center" style="bottom: 0px; width: 100px; height: 40px;">

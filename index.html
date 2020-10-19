@@ -74,7 +74,7 @@
                      src="assets/images/wrench-tool-fix-repair-svgrepo-com.svg" width="30" height="30"> Monte o seu
                   PC</a>
                <a class="nav-link nav-item text-center" style="color: black;" href="#loginModal" data-toggle="modal"><i
-                     class="fas fa-sign-in-alt"></i> Entrar</a>
+                     class="fas fa-sign-in-alt"></i> Entrar ou registrar-se</a>
             </div>
          </div>
       </div>
@@ -99,13 +99,13 @@
                   <div class="form-group row">
                      <label for="nome" class="col-form-label col-lg-2">Usuário</label>
                      <div class="col-lg-10">
-                        <input type="text" name="nome" class="form-control is-valid" placeholder="Usuário" id="nome">
+                        <input type="text" name="nome" class="form-control" placeholder="Usuário" id="userEmail">
                      </div>
                   </div>
                   <div class="form-group row">
                      <label for="senha" class="col-form-label col-lg-2">Senha</label>
                      <div class="col-lg-10 center">
-                        <input type="password" placeholder="Senha" name="psw" id="senha">
+                        <input type="password" placeholder="Senha" name="psw" id="senhaLogin">
                      </div>
                   </div>
                   <div class="form-group row center">
@@ -120,7 +120,7 @@
             </div>
             <div class="modal-footer">
                <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
-               <button type="button" class="btn btn-primary">Entrar</button>
+               <button type="button" class="btn btn-primary" id="botaoLogin">Entrar</button>
             </div>
          </div>
       </div>
@@ -144,14 +144,14 @@
                      <div class="form-group row">
                         <label for="nome" class="col-form-label col-lg-2">Nome</label>
                         <div class="col-lg-10">
-                           <input type="text" name="nome" class="form-control is-valid" placeholder="Nome" id="nome">
+                           <input type="text" name="nome" class="form-control" placeholder="Nome" id="nomeRegistro">
                         </div>
                      </div>
                      <div class="form-group row">
                         <label for="e-mail" class="col-form-label col-lg-2">E-mail</label>
                         <div class="col-lg-10">
-                           <input type="email" name="e-mail" class="form-control is-valid"
-                              placeholder="Endereço de e-mail." id="nome">
+                           <input type="email" name="e-mail" class="form-control" placeholder="Endereço de e-mail."
+                              id="emailRegistro">
                         </div>
                      </div>
                      <div class="form-group row">
@@ -169,12 +169,15 @@
                                  Feminino
                               </label>
                            </div>
+                           <div id="sexo-feedback" class="invalid-feedback">
+                              Campo de preenchimento obrigatório.
+                           </div>
                         </div>
                      </div>
                      <div class="form-group row">
                         <label for="CPF" class="col-form-label col-lg-2">CPF</label>
                         <div class="col-lg-10">
-                           <input type="text" id="CPF" name="cpf" class="form-control is-invalid"
+                           <input type="text" id="cpf" name="cpf" class="form-control"
                               placeholder="Cadastro de pessoa física(Somente números)">
                            <div class="invalid-feedback">
                               Este campo deve ser informado.
@@ -184,7 +187,7 @@
                      <div class="form-group row">
                         <label for="cep" class="col-form-label col-lg-2">CEP</label>
                         <div class="col-lg-10">
-                           <input type="text" id="cep" name="cep" class="form-control is-invalid" placeholder="CEP">
+                           <input type="text" id="cep" name="cep" class="form-control" placeholder="CEP">
                            <div class="invalid-feedback">
                               Este campo deve ser informado.
                            </div>
@@ -193,7 +196,7 @@
                      <div class="form-group row">
                         <label for="telefone" class="col-form-label col-lg-2">Número de telefone</label>
                         <div class="col-lg-10">
-                           <input type="text" id="telefone" name="endereco" class="form-control is-invalid"
+                           <input type="text" id="telefone" name="endereco" class="form-control"
                               placeholder="Somente números(DDD e o número).">
                            <div class="invalid-feedback">
                               Este campo deve ser informado.
@@ -204,86 +207,101 @@
                   <fieldset class="form-group" style="margin-bottom: 0px;">
                      <fieldset class="form-group" style="margin-bottom: 0px;">
                         <div class="form-group row">
-                           <label for="passeio" class="col-form-label col-lg-2 text-left text-lg-right">Estou me
+                           <label for="objetivo" class="col-form-label col-lg-2 text-left text-lg-right">Estou me
                               inscrevendo no site com o objetivo de:</label>
                            <div class="col-lg-10">
-                              <select class="form-control" id="passeio" multiple>
+                              <select class="form-control form-control-sm" id="objetivo">
                                  <option value="">-- Selecione uma opção --</option>
-                                 <option value="">Montar um computador</option>
-                                 <option value="">Comprar peças</option>
-                                 <option value="">Vender peças</option>
+                                 <option value="1">Montar um computador</option>
+                                 <option value="2">Comprar peças</option>
+                                 <option value="3">Fornecer peças</option>
                               </select>
+                           </div>
+                           <div class="invalid-feedback">
+                              Campo de preenchimento obrigatório.
                            </div>
                         </div>
                         <div class="form-group row">
-                           <label for="senha" class="col-form-label col-lg-2 text-left text-lg-right">Fiquei sabendo da
+                           <label for="soube" class="col-form-label col-lg-2 text-left text-lg-right">Fiquei sabendo da
                               loja por meio de:</label>
-                           <div class="col-lg-10">
+                           <div class="col-lg-10" id="soube">
                               <div class="form-check">
-                                 <input type="checkbox" class="form-check-input" name="facebook" id="facebook">
-                                 <label class="form-check-label" for="facebook">
+                                 <input type="checkbox" class="form-check-input soube" name="facebook" id="facebookCheck">
+                                 <label class="form-check-label soube" for="facebook">
                                     Facebook
                                  </label>
                               </div>
                               <div class="form-check">
-                                 <input type="checkbox" class="form-check-input" name="twitter" id="twitter">
+                                 <input type="checkbox" class="form-check-input soube" name="twitter" id="twitterCheck">
                                  <label class="form-check-label" for="twitter">
                                     Twitter
                                  </label>
                               </div>
                               <div class="form-check">
-                                 <input type="checkbox" class="form-check-input" name="youtube" id="youtube">
+                                 <input type="checkbox" class="form-check-input soube" name="youtube" id="youtubeCheck">
                                  <label class="form-check-label" for="youtube">
                                     Youtube
                                  </label>
                               </div>
                               <div class="form-check">
-                                 <input type="checkbox" class="form-check-input" name="email" id="email">
+                                 <input type="checkbox" class="form-check-input soube" name="email" id="emailCheck">
                                  <label class="form-check-label" for="email">
                                     E-mail
                                  </label>
                               </div>
                               <div class="form-check">
-                                 <input type="checkbox" class="form-check-input" name="recomendado" id="recomendado">
+                                 <input type="checkbox" class="form-check-input soube" name="recomendado"
+                                    id="recomendadoCheck">
                                  <label class="form-check-label" for="recomendado">
-                                    Recomendação de amigos
+                                    Recomendação de amigos ou parceiros
                                  </label>
                               </div>
                               <div class="form-check">
-                                 <input type="checkbox" class="form-check-input" name="outros" id="outros">
+                                 <input type="checkbox" class="form-check-input soube" name="outros" id="outrosCheck">
                                  <label class="form-check-label" for="outros">
                                     Outros
                                  </label>
                               </div>
+                              <div id="soube-feedback" class="invalid-feedback">
+                                 Campo de preenchimento obrigatório.
+                              </div>
                            </div>
                         </div>
 
-                        <div class="form-group row">
-                           <label for="" class="col-form-label col-lg-2">Deseja receber mensagens com promoções e
+                        <div class="form-group row" style="padding-left: 10px;">
+                           <label for="" class="col-form-label col-lg-2 text-left text-lg-right">Deseja receber
+                              mensagens com promoções e
                               novidades?</label>
-                           <div class="form-check form-check-inline">
+                           <div class="form-check form-check-inline" style="padding-left: 10px;">
                               <input class="form-check-input" type="radio" name="resposta" id="sim" value="s">
-                              <label class="form-check-label" for="exampleRadios1">
+                              <label class="form-check-label" for="sim">
                                  Sim
                               </label>
                            </div>
-                           <div class="form-check form-check-inline">
+                           <div class="form-check form-check-inline" style="padding-left: 10px;">
                               <input class="form-check-input" type="radio" name="resposta" id="nao" value="n">
-                              <label class="form-check-label" for="exampleRadios1">
+                              <label class="form-check-label" for="nao">
                                  Não
                               </label>
+                           </div>
+                           <div id="resposta-feedback" class="invalid-feedback" style="padding-left: 17%;">
+                              Campo de preenchimento obrigatório.
                            </div>
                         </div>
 
                      </fieldset>
                      <fieldset>
-                        <div class="form-check form-group row form-check-inline" style="padding-left: 50px;">
-                           <input class="form-check-input" type="checkbox" id="termosCheck">
+                        <div class="form-check form-group row form-check-inline" style="padding-left: 17%;">
+                           <input class="form-check-input termos" type="checkbox" id="termosCheck">
                            <label class="form-check-label" for="termosCheck">
                               Eu li os <a href="#" style="color: cornflowerblue;">termos de serviço</a> do site e desejo
                               continuar
                            </label>
-                           <button type="button" class="btn btn-primary" data-dismiss="modal" style="padding-left: 10px; margin: 10px;">
+                           <div id="termos-feedback" class="invalid-feedback">
+                              Campo de preenchimento obrigatório.
+                           </div>
+                           <button type="button" class="btn btn-primary" id="botaoEnviar"
+                              style="padding-left: 10px; margin: 10px;">
                               Enviar
                            </button>
                         </div>
@@ -306,7 +324,7 @@
       </ol>
       <div class="carousel-inner">
          <div class="carousel-item active">
-            <img class="d-block w-50 h-50" src="assets/images/ryzen 5 1600.png" alt="Ryzen 5 1600">
+            <img class="d-block w-25 h-25" src="assets/images/ryzen 5 1600.png" alt="Ryzen 5 1600">
             <div class="carousel-caption d-inline d-md-block">
                <h5>Ryzen 5 1600</h5>
                <p>R$ 700,00</p>
@@ -453,6 +471,9 @@
    <h3>Computadores<span class="badge badge-secondary">Novo</span></h3>
    <div class="alert alert-warning" role="alert">
       Página em construção!
+   </div>
+   <div class="alert alert-warning" role="alert">
+      Trabalho 2: É um formulário de registro de usuário.
    </div>
    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
       Componentes Utilizados
