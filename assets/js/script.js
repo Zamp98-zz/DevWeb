@@ -17,6 +17,7 @@ $(function () {
         let termosValido = validaTermosFunction()
 
 
+
         if (nome_valido && emailValido && cpfValido && cepValido && telefoneValido && sexoValido && respostaValida && objetivoValido && soubeValido && termosValido) {
             alert("deu certo")
             $('#registroModal').modal('hide')
@@ -39,6 +40,118 @@ $(function () {
             alert("senha inválida")
         }
     })
+})
+$(function () {
+
+    /* botão de like*/
+    let like1 = $("#like1").data("like")
+    let dislike1 = $("#dislike1").data("dislike")
+
+    $("#like1").addClass("badge bagde-secondary")
+    $("#dislike1").addClass("badge bagde-secondary")
+
+    $("#like1").text(like1)
+    $("#dislike1").text(dislike1)
+    
+    $("#button-like1").click(function(){
+        
+        $("#like1").text(like1 + 1)
+    })
+
+    /* botão de like1*/
+    let like2 = $("#like2").data("like")
+    let dislike2 = $("#dislike2").data("dislike")
+
+    $("#like2").addClass("badge bagde-secondary")
+    $("#dislike2").addClass("badge bagde-secondary")
+
+    $("#like2").text(like2)
+    $("#dislike2").text(dislike2)
+
+    /* botão de like*/
+    let like3 = $("#like3").data("like")
+    let dislike3 = $("#dislike3").data("dislike")
+
+    $("#like3").addClass("badge bagde-secondary")
+    $("#dislike3").addClass("badge bagde-secondary")
+
+    $("#like3").text(like3)
+    $("#dislike3").text(dislike3)
+
+    /* botão de like*/
+    let like4 = $("#like4").data("like")
+    let dislike4 = $("#dislike4").data("dislike")
+
+    $("#like4").addClass("badge bagde-secondary")
+    $("#dislike4").addClass("badge bagde-secondary")
+
+    $("#like4").text(like4)
+    $("#dislike4").text(dislike4)
+    
+    /* botão de like*/
+    let like5 = $("#like5").data("like")
+    let dislike5 = $("#dislike5").data("dislike")
+
+    $("#like5").addClass("badge bagde-secondary")
+    $("#dislike5").addClass("badge bagde-secondary")
+
+    $("#like5").text(like5)
+    $("#dislike5").text(dislike5)
+
+    
+    /* botão de like*/
+    let like6 = $("#like6").data("like")
+    let dislike6 = $("#dislike6").data("dislike")
+
+    $("#like6").addClass("badge bagde-secondary")
+    $("#dislike6").addClass("badge bagde-secondary")
+
+    $("#like6").text(like6)
+    $("#dislike6").text(dislike6)
+
+    
+    /* botão de like*/
+    let like7 = $("#like7").data("like")
+    let dislike7 = $("#dislike7").data("dislike")
+
+    $("#like7").addClass("badge bagde-secondary")
+    $("#dislike7").addClass("badge bagde-secondary")
+
+    $("#like7").text(like7)
+    $("#dislike7").text(dislike7)
+
+    
+    /* botão de like*/
+    let like8 = $("#like8").data("like")
+    let dislike8 = $("#dislike8").data("dislike")
+
+    $("#like8").addClass("badge bagde-secondary")
+    $("#dislike8").addClass("badge bagde-secondary")
+
+    $("#like8").text(like8)
+    $("#dislike8").text(dislike8)
+
+    
+    /* botão de like*/
+    let like9 = $("#like9").data("like")
+    let dislike9 = $("#dislike9").data("dislike")
+
+    $("#like9").addClass("badge bagde-secondary")
+    $("#dislike9").addClass("badge bagde-secondary")
+
+    $("#like9").text(like9)
+    $("#dislike9").text(dislike9)
+
+    
+    /* botão de like*/
+    let like10 = $("#like10").data("like")
+    let dislike10 = $("#dislike10").data("dislike")
+
+    $("#like10").addClass("badge bagde-secondary")
+    $("#dislike10").addClass("badge bagde-secondary")
+
+    $("#like10").text(like10)
+    $("#dislike10").text(dislike10)
 })
 
 function validaObjetivoFunction() {
@@ -119,7 +232,7 @@ function validaTermosFunction() {
         termos.addClass("is-invalid")
         termos.removeClass("is-valid")
         return false
-    }else{
+    } else {
         termos.removeClass("is-invalid")
         termos.addClass("is-valid")
         return true
