@@ -41,9 +41,93 @@ $(function () {
         }
     })
 })
+/*tentativa de fazer um loop pra mostrar os dados dos botões de like*/
+$(function(){/*
+    var i = 1
+    for(i; i < 15; i++){
+        var idLike = "like"
+        var idDislike = "dislike"
+        idLikeNovo = idLike + i
+        idDislikeNovo = idDislike + i
+        let like = $("#" + idLikeNovo).data("like")
+        let dislike = $("#" + idDislikeNovo).data("dislike")
+    
+        $("#" + idLikeNovo).addClass("badge bagde-secondary")
+        $("#" + idDislikeNovo).addClass("badge bagde-secondary")
+    
+        $("#"+idLikeNovo).text(like)
+        $("#" + idDislikeNovo).text(dislike)
+        
+    }*/
+    $("i.fa-thumbs-up").each(function(index){
+        let id = $(this).parent().children("span:eq(0)").attr('id')
+  
+        let text = $("#"+id).data("like")
+        $("#"+id).text(text)
+     })
+     $("i.fa-thumbs-down").each(function(index){
+        let id = $(this).parent().children("span:eq(0)").attr('id')
+  
+        let text = $("#"+id).data("dislike")
+        $("#"+id).text(text)
+     })
+})
+$("i.fa-thumbs-up, i.fa-thumbs-down").click(function(){
+    if($(this).hasClass("fa-thumbs-up")){
+
+       if($(this).hasClass("far")){
+       
+          $(this).removeClass("far ").addClass("fas")
+          let idLike = $(this).parent().children("span:eq(0)").attr('id')
+          let like = $("#"+idLike).data("like")
+          $("#"+idLike).text(like+1)
+
+          $(this).parent().parent().children("div:eq(1)").children("i:eq(0)").removeClass("fas ").addClass("far ")
+          let idDislike = $(this).parent().parent().children("div:eq(1)").children("span:eq(0)").attr('id')
+          
+          let dislike = $("#"+idDislike).data("dislike")
+          $("#"+idDislike).text(dislike)
+       
+       }else{
+
+          $(this).removeClass("fas").addClass("far")
+          let idLike = $(this).parent().children("span:eq(0)").attr('id')
+          let like = $("#"+idLike).data("like")
+          $("#"+idLike).text(like)
+
+       }
+
+    }else if($(this).hasClass("fa-thumbs-down")){
+
+       if($(this).hasClass("far")){
+
+          $(this).removeClass("far ").addClass("fas")
+
+          let idDislike = $(this).parent().children("span:eq(0)").attr('id')
+          let dislike = $("#"+idDislike).data("dislike")
+          $("#"+idDislike).text(dislike+1)
+
+          $(this).parent().parent().children("div:eq(0)").children("i:eq(0)").removeClass("fas ").addClass("far ")
+          let idLike = $(this).parent().parent().children("div:eq(0)").children("span:eq(0)").attr('id')
+          console.log(idLike)
+          let like = $("#"+idLike).data("like")
+          $("#"+idLike).text(like)
+
+       }else{
+
+          $(this).removeClass("fas").addClass("far")
+          let idDislike = $(this).parent().children("span:eq(0)").attr('id')
+          let dislike = $("#"+idDislike).data("dislike")
+          $("#"+idDislike).text(dislike)
+
+       }
+
+    }
+ })
+/*
 $(function () {
 
-    /* botão de like*/
+    /* botão de like
     let like1 = $("#like1").data("like")
     let dislike1 = $("#dislike1").data("dislike")
 
@@ -54,11 +138,10 @@ $(function () {
     $("#dislike1").text(dislike1)
     
     $("#button-like1").click(function(){
-        
         $("#like1").text(like1 + 1)
     })
 
-    /* botão de like1*/
+    /* botão de like1
     let like2 = $("#like2").data("like")
     let dislike2 = $("#dislike2").data("dislike")
 
@@ -68,7 +151,7 @@ $(function () {
     $("#like2").text(like2)
     $("#dislike2").text(dislike2)
 
-    /* botão de like*/
+    /* botão de like
     let like3 = $("#like3").data("like")
     let dislike3 = $("#dislike3").data("dislike")
 
@@ -78,7 +161,7 @@ $(function () {
     $("#like3").text(like3)
     $("#dislike3").text(dislike3)
 
-    /* botão de like*/
+    /* botão de like
     let like4 = $("#like4").data("like")
     let dislike4 = $("#dislike4").data("dislike")
 
@@ -88,7 +171,7 @@ $(function () {
     $("#like4").text(like4)
     $("#dislike4").text(dislike4)
     
-    /* botão de like*/
+    /* botão de like
     let like5 = $("#like5").data("like")
     let dislike5 = $("#dislike5").data("dislike")
 
@@ -99,7 +182,7 @@ $(function () {
     $("#dislike5").text(dislike5)
 
     
-    /* botão de like*/
+    /* botão de like
     let like6 = $("#like6").data("like")
     let dislike6 = $("#dislike6").data("dislike")
 
@@ -110,7 +193,7 @@ $(function () {
     $("#dislike6").text(dislike6)
 
     
-    /* botão de like*/
+    /* botão de like
     let like7 = $("#like7").data("like")
     let dislike7 = $("#dislike7").data("dislike")
 
@@ -121,7 +204,7 @@ $(function () {
     $("#dislike7").text(dislike7)
 
     
-    /* botão de like*/
+    /* botão de like
     let like8 = $("#like8").data("like")
     let dislike8 = $("#dislike8").data("dislike")
 
@@ -132,7 +215,7 @@ $(function () {
     $("#dislike8").text(dislike8)
 
     
-    /* botão de like*/
+    /* botão de like
     let like9 = $("#like9").data("like")
     let dislike9 = $("#dislike9").data("dislike")
 
@@ -143,7 +226,7 @@ $(function () {
     $("#dislike9").text(dislike9)
 
     
-    /* botão de like*/
+    /* botão de like
     let like10 = $("#like10").data("like")
     let dislike10 = $("#dislike10").data("dislike")
 
@@ -152,7 +235,19 @@ $(function () {
 
     $("#like10").text(like10)
     $("#dislike10").text(dislike10)
-})
+
+    /* botão de like
+    let like11 = $("#like11").data("like")
+    let dislike11 = $("#dislike11").data("dislike")
+
+    $("#like11").addClass("badge bagde-secondary")
+    $("#dislike11").addClass("badge bagde-secondary")
+
+    $("#like11").text(like11)
+    $("#dislike11").text(dislike11)
+    
+
+})*/
 
 function validaObjetivoFunction() {
     let objetivo = $("#objetivo")
